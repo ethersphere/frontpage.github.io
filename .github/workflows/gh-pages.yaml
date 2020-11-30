@@ -41,6 +41,6 @@ jobs:
           publish_dir: ./dist
       - name: Swarm upload
         run: |
-          rm ./dist/.nojekyll
+          rm ./dist/.nojekyll || true
           FEED=$(./swarm --bzzapi https://swarm-public-0-swarm.prod.swarm-gateways.net --verbosity 6 --recursive --defaultpath ./dist/index.html up ./dist)
           ./swarm --bzzapi https://swarm-gateways.net/ --verbosity 6 --password password feed update 0x"${FEED}"
