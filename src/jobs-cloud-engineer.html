@@ -31,7 +31,6 @@
 
   <link rel="shortcut icon" href="images/favicon/favicon-16x16.png" type="image/x-icon">
 
-  <title>Swarm is hiring a Cloud Engineer</title>
 
   <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/fontawesome/css/font-awesome.min.css" rel="stylesheet">
@@ -45,26 +44,6 @@
   <link rel="stylesheet" href="../generated-fonts/FontAwesome.css">
 
 
-  <script>
-    async function getHTML() {
-      let gateway = "https://swarm-gateways.net/bzz:/";
-      let html2Save = document.getElementsByTagName("HTML")[0].outerHTML;
-      document.getElementById("publishbtn").remove()
-      let formData = new FormData();
-      formData.append('index.html', html2Save);
-      let response = await axios.post(gateway, formData, {
-        headers: {
-          'Content-Type': 'text/html'
-        }
-      });
-
-      console.log(response)
-
-      setTimeout(function () {
-        window.location.href = gateway + '/' + response.data + "/index.html";
-      }, 2000)
-    }
-  </script>
 
 </head>
 
