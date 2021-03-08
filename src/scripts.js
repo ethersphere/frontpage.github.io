@@ -1,7 +1,4 @@
-
-
 $(document).ready(function () {
-
 
   // ==========================================
   // SMOOTH SCROLL MENU & SCROLLSPY OFFSET FIX
@@ -188,8 +185,8 @@ $(document).ready(function () {
     infinite: true,
     centerMode: false,
     autoplaySpeed: 5000,
-    slidesToScroll: 3,
-    slidesToShow: 3,
+    slidesToScroll: 2,
+    slidesToShow: 2,
     prevArrow: "<i class='fa fa-angle-left slick-prev' aria-hidden='true'></i>",
     nextArrow: "<i class='fa fa-angle-right slick-next' aria-hidden='true'></i>",
     responsive: [
@@ -220,8 +217,8 @@ $(document).ready(function () {
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3
+          slidesToShow: 2,
+          slidesToScroll: 2
         }
       }
     ]
