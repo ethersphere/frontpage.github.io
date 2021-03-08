@@ -178,5 +178,53 @@ $(document).ready(function () {
     prevArrow: "<i class='fa fa-angle-left slick-prev' aria-hidden='true'></i>",
     nextArrow: "<i class='fa fa-angle-right slick-next' aria-hidden='true'></i>"
   });
+
+  // ====================================
+  // "GRANTS" SECTION SLIDER INITIALIZER
+  // ====================================
+
+  $('.slider-grants').slick({
+    dots: true,
+    infinite: true,
+    centerMode: false,
+    autoplaySpeed: 5000,
+    slidesToScroll: 3,
+    slidesToShow: 3,
+    prevArrow: "<i class='fa fa-angle-left slick-prev' aria-hidden='true'></i>",
+    nextArrow: "<i class='fa fa-angle-right slick-next' aria-hidden='true'></i>",
+    responsive: [
+      {
+        breakpoint: 490,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      ,
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      ,
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      ,
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      }
+    ]
+  });
 });
 
