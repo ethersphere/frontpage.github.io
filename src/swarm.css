@@ -158,6 +158,10 @@ section {
   line-height: 1.5;
 }
 
+.section-light h6 {
+  color:var(--cement-gray);
+}
+
 .section-light .more {
   color: var(--swarm-orange);
   font-size: 14px;
@@ -396,7 +400,8 @@ section .section-content {
 
 .slider-when .card-title,
 .slider-when-nav .slick-current .card-title,
-.card-title {
+.card-title, 
+h6 {
   font-size: 22px;
   color:var(--nearly-white);
   font-family: "IBMPlexMonoRegular";
@@ -546,6 +551,21 @@ footer .footerlinks a {
 footer .footer-bottom div:first-child {
   padding-bottom: 36px;
 }
+
+/* Grant Recipients */
+
+#grant-recipients {
+  margin-top: 10px;
+}
+
+#grant-recipients p {
+  margin-bottom: 8px;
+}
+
+#grant-recipients div {
+  margin-bottom: 20px;
+}
+
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
