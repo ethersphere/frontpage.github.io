@@ -155,7 +155,7 @@ section {
   color:var(--cement-gray);
   font-family: "IBMPlexMono500";
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 .section-light h6 {
@@ -252,7 +252,7 @@ section {
 
 .section-orange .slick-prev,
 .section-orange .slick-next {
-  color: rgba(256,256,256,0.3);
+  color: var(--nearly-white);
 }
 
 .btn-blue { 
@@ -275,7 +275,7 @@ section {
   -moz-box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.5);
   -o-box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.5);
-  margin-bottom: 50px;
+  margin: 20px 0px 40px 0px;
   color: var(--nearly-white);
   font-family: "IBMPlexMonoRegular";
   font-weight: bold;
@@ -563,9 +563,12 @@ footer .footer-bottom div:first-child {
 }
 
 #grant-recipients div {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
+#grant-recipients h6 {
+  margin-bottom: 18px;
+}
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
