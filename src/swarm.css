@@ -554,6 +554,10 @@ footer .footer-bottom div:first-child {
 
 /* Grant Recipients */
 
+.slick-list {
+  transition: all .5s ease;
+}
+
 #grant-recipients {
   margin-top: 10px;
 }

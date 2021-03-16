@@ -180,13 +180,14 @@ $(document).ready(function () {
   // "GRANTS" SECTION SLIDER INITIALIZER
   // ====================================
 
-  $('.slider-grants').slick({
-    dots: true,
+  var grantsSliderAttrs = {
+    dots: false,
     infinite: true,
     centerMode: false,
     autoplaySpeed: 5000,
     slidesToScroll: 2,
     slidesToShow: 2,
+    adaptiveHeight: true,
     prevArrow: "<i class='fa fa-angle-left slick-prev' aria-hidden='true'></i>",
     nextArrow: "<i class='fa fa-angle-right slick-next' aria-hidden='true'></i>",
     responsive: [
@@ -222,6 +223,41 @@ $(document).ready(function () {
         }
       }
     ]
-  });
-});
+  };
 
+  // my slick slider as constant object
+  var grantsSlider = $('.slider-grants').on('init', function(slick) {
+    console.log('ehllo..')
+    // on init run our multi slide adaptive height function
+    multiSlideAdaptiveHeight(this);
+  }).on('beforeChange', function(slick, currentSlide, nextSlide) {
+    // on beforeChange run our multi slide adaptive height function
+    multiSlideAdaptiveHeight(this);
+  }).slick(grantsSliderAttrs);
+
+  function multiSlideAdaptiveHeight(slider) {
+    let activeSlides = [];
+    let tallestSlide = 0;
+
+    // very short delay in order for us get the correct active slides
+    setTimeout(function() {
+      // loop through each active slide for our current slider
+      $('.slick-track .slick-active', slider).each(function(item) {
+        // add current active slide height to our active slides array
+        activeSlides[item] = $(this).outerHeight();
+      });
+
+      // for each of the active slides heights
+      activeSlides.forEach(function(item) {
+        // if current active slide height is greater than tallest slide height
+        if (item > tallestSlide) {
+          // override tallest slide height to current active slide height
+          tallestSlide = item;
+        }
+      });
+
+      // set the current slider slick list height to current active tallest slide height
+      $('.slick-list', slider).height(tallestSlide);
+    }, 10);
+  }
+});
