@@ -295,6 +295,14 @@ section {
   font-weight: bold;
 }
 
+.btn-light .nav-link {
+  width: 100%;
+}
+
+.btn-light .navlink {
+  white-space: normal;
+}
+
 .btn-dark { 
   border: none !important;
   padding: 15px 32px;
