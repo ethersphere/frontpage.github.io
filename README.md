@@ -4,11 +4,15 @@
 
 #### Using Github
 
-Fork the repo
+Fork the repo to create yourcopy/frontpage.github.io
 
-Work on your copy
+Work on your yourcopy
 
-Create a pull request
+Create a pull request from yourcopy/frontpage.github.io to ethersphere/frontpage.github.io
+
+Thanks for your contribution!
+
+Update your fork by [switching bases](https://www.sitepoint.com/quick-tip-sync-your-fork-with-the-original-without-the-cli/) and merging a PR from ethersphere/frontpage.github.io to yourcopy/frontpage.github.io
 
 #### Local Development
 
