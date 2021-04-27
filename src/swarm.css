@@ -582,6 +582,52 @@ footer .footer-bottom div:first-child {
   margin-bottom: 18px;
 }
 
+/* FAQs */
+
+a.link {
+  color: var(--swarm-orange);
+}
+
+#all-the-faqs .more {
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+#search {
+  margin-top: 20px;
+}
+
+#search-input {
+  background-image: url('images/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#all-the-faqs h3 {
+  border-top: 1px solid var(--cement-gray);
+  padding-top: 18px;
+}
+
+#all-the-faqs h3:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+#all-the-faqs img {
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+#all-the-faqs .hide,
+#all-the-faqs .hide + .answer {
+  display: none;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
   footer .footerlinks.fl1 p, 

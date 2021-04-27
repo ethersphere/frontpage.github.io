@@ -261,3 +261,27 @@ $(document).ready(function () {
     }, 10);
   }
 });
+
+// For FAQ search
+function search(){
+  // Declare variables
+  var input, filter, list, faqs, a, i, txtValue;
+  input = document.getElementById('search-input');
+  filter = input.value.toUpperCase();
+  list = document.getElementById("all-the-faqs");
+  faqs = list.getElementsByClassName('question');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < faqs.length; i++) {
+    a = faqs[i]
+
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      faqs[i].classList.remove('hide')
+      // faqs[i].style.display = "";
+    } else {
+      faqs[i].classList.add('hide')
+      // faqs[i].style.display = "none";
+    }
+  }
+}
