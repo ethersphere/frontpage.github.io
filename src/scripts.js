@@ -265,23 +265,72 @@ $(document).ready(function () {
 // For FAQ search
 function search(){
   // Declare variables
-  var input, filter, list, faqs, a, i, txtValue;
+  var input, filter, list, faqs, a, i, j, txtValue, topics, topic, topicHiddenFAQs, totalHiddenFAQs, totalFAQs;
   input = document.getElementById('search-input');
   filter = input.value.toUpperCase();
-  list = document.getElementById("all-the-faqs");
-  faqs = list.getElementsByClassName('question');
+  list = document.getElementById("faqs");
+  topics = list.getElementsByClassName('faq-topic-wrap');
 
-  // Loop through all list items, and hide those who don't match the search query
-  for (i = 0; i < faqs.length; i++) {
-    a = faqs[i]
+  totalHiddenFAQs = 0;
+  totalFAQs = 0;
 
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      faqs[i].classList.remove('hide')
-      // faqs[i].style.display = "";
-    } else {
-      faqs[i].classList.add('hide')
-      // faqs[i].style.display = "none";
+  for (i = 0; i < topics.length; i++) {     
+    topicHiddenFAQs = 0;
+    topic = topics[i]
+    faqs = topic.getElementsByClassName('question');    
+    totalFAQs += faqs.length
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (j = 0; j < faqs.length; j++) {
+      a = faqs[j]
+
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        faqs[j].classList.remove('hide');
+      } else {
+        faqs[j].classList.add('hide');
+        topicHiddenFAQs++
+      }
     }
+
+    // If all FAQs are hidden for this topic show a no-results message
+    if(topicHiddenFAQs === faqs.length){
+      topic.classList.add('no-results')
+    }else{
+      topic.classList.remove('no-results')
+    }
+
+    totalHiddenFAQs += topicHiddenFAQs;
+  }
+
+  // If all FAQs are hidden entirely show a no-results message
+  if(totalHiddenFAQs === totalFAQs){
+    list.classList.add('no-results');
+  }else{
+    list.classList.remove('no-results')
   }
 }
+
+function clearSearch(){
+  input = document.getElementById('search-input').value = "";
+  search();
+}
+
+// Requires jQuery to access the bootstrap custom event show.bs.collapse
+var $faqWrap = $('#all-the-faqs');
+$faqWrap.on('show.bs.collapse','.collapse', function() {
+  $faqWrap.find('.collapse.show').collapse('hide');
+});
+
+
+// var _paq = _paq || [];
+// /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+// _paq.push(['trackPageView']);
+// _paq.push(['enableLinkTracking']);
+// (function() {
+//   var u="//matomo.datafund.io/";
+//   _paq.push(['setTrackerUrl', u+'piwik.php']);
+//   _paq.push(['setSiteId', '6']);
+//   var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+//   g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+// })();
