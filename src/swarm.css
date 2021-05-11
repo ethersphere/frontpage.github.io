@@ -603,10 +603,11 @@ footer .footer-bottom div:first-child {
 #search {
   margin-top: 20px;
   position: relative;
+  max-width: 300px;
 }
 
 #search-input {
-  background-image: url(/images/search-light.svg);
+  background-image: url('images/search-light.svg');
   background-position: 10px 12px;
   background-repeat: no-repeat;
   width: 100%;
@@ -622,7 +623,7 @@ footer .footer-bottom div:first-child {
 #search-input:focus {
   outline: 0;
   border-bottom-color: var(--swarm-orange);
-  background-image: url('/images/search-orange.svg'); /* Add a search icon to input */
+  background-image: url('images/search-orange.svg'); /* Add a search icon to input */
 }
 
 #clear-search:after {
