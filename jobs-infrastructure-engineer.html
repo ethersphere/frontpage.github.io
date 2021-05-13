@@ -190,6 +190,11 @@ body {
   position: relative;
 }
 
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
 #header {
   height: 128px;
 }
@@ -744,6 +749,88 @@ footer .footer-bottom div:first-child {
   margin-bottom: 18px;
 }
 
+/* FAQs */
+
+#faqs .nav-link {
+  color: var(--swarm-orange);
+}
+
+#faqs .more {
+  padding-bottom: 5px;
+  cursor: pointer;
+  font-family: "WorkSans500";
+  font-size: 16px;
+}
+
+#search {
+  margin-top: 20px;
+  position: relative;
+  max-width: 300px;
+}
+
+#search-input {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsSAAALEgHS3X78AAACzklEQVRogd2Z33ETQQzGv1wDSQehA7sDnAqACmKeNQPpAIcKwoOesRsAOsDpwO6A6yB+Z8aMjJw5bqTz7Z/LrflmPBln93b9W0kr7d7Ffr9HiIjoCsBbAFP9yPeJDrEDsAHwBGAtH2beBE0Qqd4gRDQDcAfgTeBUNYAHAEtmfhoNRAEWAF4nziXWemDmReI4pjpBiEhW8mPmObcA5rldzgTROFg3fD+3dgrzYzCQAAj5MfJDfjUC/Bj8s56u+J6Zl0kEqn9AekI8Ssww87prYB1rrhvEdUfXm1Nj9VEbRFbn1nmuVncImlSBBOaT00UsO2VmsWw6CBFJbvju9JMAnaVsn7r7iSteGs2PzCzt0TqA6KptHBdInqQBM1XXtWDepQR/pX/nDsRWs3gW6ZY7d8aSrT5aR5A7Z4B57mysq/7FaLpW945SpQ9b1lgNWCctNMjbigfRPd+bbBCpla38kR1km7od9pAFcqm7W7AqJ/llKx08qdvWRvM0FsRScqbtKcvqVzEDeSAvpWwL5oEMdgAaSh5IlHlLBHkpZSl9ukCyTXBCr4zmKLeutJ5qK1t95UkLSKuiiKomKmfnmBCRtVo5ZRWPu9hDlgeCIUuUxumxrfgyXqtRK8PeqvmH0MI5kySfR7yzwFJXL5u02raumOocB6ulY5VJzrpLLezdmnhnol76b87sz3lEzbpy+ollNjEltrgmEUlM/HQgfgP4EDpuWyXcayGHxVNuGmvtl3LT2FQSzFh3vzLphfH/aJixbuO/AbjvaA+G6ax+mVn8+0bjIlVya3LPzHI9+lkusJ3xxAvWoflr1DdWRCSbwVfnuSDLjP4OMRdMMMgQygEz9gnxIH3ZkxQzRYAgA0wxIEiEKQpEFAtTHAgiYYoEQQRMsSAIhCkij5xSnzxzFiA4DbM6GxD4MAeLFB0jbRkx81y+nJVFjlLLSCX+twYD8AdlboNtY5FBCgAAAABJRU5ErkJggg==');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 12px;
+  background-color: transparent;
+  background-size: 25px;
+}
+
+#search-input:focus {
+  outline: 0;
+  border-bottom-color: var(--swarm-orange);
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsSAAALEgHS3X78AAAC10lEQVRogd2Z0W3bMBCG/2iBZAP1Qe/2BnUmaDtB1AXaABqgTt8FpBPUXqDNBnE2sN/1UG4Qvxdwce45cIU7WSRPEd0fMAKHFOmPd8c7Uhe73Q4+aqr8CsB7AFP+0PcJD7EFsAbwDGBFn6J2a68JAtUbpKnyGYBbAO88p3IA7gEsito9jwbCAHMAbyPnImvdF7WbR44jqhOkqXJayc/Gc24AlNYuJ4JwHKyOfN9aW4Z5GAzEA4J+DP2QX0cBfgj+WU9X/FjUbhFFwPoHpCfEE8VMUbtV18A8VskbRN7R9frUWH3UBqHVuVGec+wOXpMyEMF8UbqQZadF7ciy8SBNlVNu+Kn0owCdxWyfvPuRK14KzU9F7ag9WHsQXrW14gLRkxzBTNl1JZgPMcGf8d9SgdhwFjcRb7mlMhZt9cE6gNwqA5TW2ZhX/ZvQlLN7BynjhyVrLAesk+Yc5G2Fg/Cer002iNjKUv4wB9nEboc9JIFc8u7mrUxJfmalgyZ2Wyc0T0NBJEVn2p6SrH4VMpAG8loyWzANZLAD0FDSQILMmyLIa8mk9OkCMZvghN4IzUFunXE91ZZZfaWJC0ipogiqJjJl55g0VS6tlqWk4nEbesjSQDBkiXJ0emwrvIznalTKsDds/iE0V84k0ecR7Syw4NUzE1fb0hWTszhYLRSrTCzrLrawdmuinYl66b85s7/kETbrUulHllmHlNjkmk2VU0w8KhC/AXzyHbetFO61YGHxmJtGx/1ibhqPFQUz1t0vTXoh/D8YZqzb+B8A7jravWE6q9+iduTf1xwXsaJbk7uidnQ9+pUusJXxyAtWvvlr1DdWTZXTZvBdec7LMqO/Q7SC8QYZQhYwY58Q9+KXPVExkwQIDGCSAUEkTFIgpFCY5EAQCJMkCAJgkgWBJ0wSeeSU+uSZswDBaZjl2YBAh9lbJOkYaUuImZfy5awschBbhirxvzUYgD+1/YOa2y/GmwAAAABJRU5ErkJggg==');
+}
+
+#clear-search:after {
+  content: "x";
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  height: 20px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  border-radius: 100px;
+  width: 20px;
+  text-align: center;
+  line-height: 16px;
+  color: #ddd;
+}
+
+#faqs h6 {
+  padding-top: 18px;
+}
+
+#faqs img {
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+#faqs .hide,
+#faqs .hide + .answer {
+  display: none;
+}
+
+.faq-topic-wrap.no-results:after {
+  content: "There are no FAQ found for this topic with this filter";
+  font-style: oblique;
+}
+
+#faqs.no-results .faq-topic-wrap {
+  display: none;
+}
+
+#faqs.no-results .container:after {
+  content: "There are no FAQ found with this filter";
+  font-style: oblique;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
   footer .footerlinks.fl1 p, 
@@ -918,6 +1005,7 @@ footer .footer-bottom div:first-child {
             <p><a href="https://gateway.ethswarm.org/bzz/latest.bookofswarm.eth/" target="_blank">Book of Swarm</a></p>
             <p><a href="https://ethswarm.org/" target="_blank">EthSwarm.org</a></p>
             <p><a href="https://docs.ethswarm.org/" target="_blank">Bee Documentation</a></p>
+            <p><a href="faqs.html">FAQs</a></p>
           </div>
         </div>
         <div class="col-sm-6 text-right">
@@ -1230,7 +1318,80 @@ d.slice(e-c+1,e+c+2).addClass("slick-active").attr("aria-hidden","false")),0===a
       $('.slick-list', slider).height(tallestSlide);
     }, 10);
   }
-});</script>
+});
+
+// For FAQ search
+function search(){
+  // Declare variables
+  var input, filter, list, faqs, a, i, j, txtValue, topics, topic, topicHiddenFAQs, totalHiddenFAQs, totalFAQs;
+  input = document.getElementById('search-input');
+  filter = input.value.toUpperCase();
+  list = document.getElementById("faqs");
+  topics = list.getElementsByClassName('faq-topic-wrap');
+
+  totalHiddenFAQs = 0;
+  totalFAQs = 0;
+
+  for (i = 0; i < topics.length; i++) {     
+    topicHiddenFAQs = 0;
+    topic = topics[i]
+    faqs = topic.getElementsByClassName('question');    
+    totalFAQs += faqs.length
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (j = 0; j < faqs.length; j++) {
+      a = faqs[j]
+
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        faqs[j].classList.remove('hide');
+      } else {
+        faqs[j].classList.add('hide');
+        topicHiddenFAQs++
+      }
+    }
+
+    // If all FAQs are hidden for this topic show a no-results message
+    if(topicHiddenFAQs === faqs.length){
+      topic.classList.add('no-results')
+    }else{
+      topic.classList.remove('no-results')
+    }
+
+    totalHiddenFAQs += topicHiddenFAQs;
+  }
+
+  // If all FAQs are hidden entirely show a no-results message
+  if(totalHiddenFAQs === totalFAQs){
+    list.classList.add('no-results');
+  }else{
+    list.classList.remove('no-results')
+  }
+}
+
+function clearSearch(){
+  input = document.getElementById('search-input').value = "";
+  search();
+}
+
+// Requires jQuery to access the bootstrap custom event show.bs.collapse
+var $faqWrap = $('#all-the-faqs');
+$faqWrap.on('show.bs.collapse','.collapse', function() {
+  $faqWrap.find('.collapse.show').collapse('hide');
+});
+
+
+// var _paq = _paq || [];
+// /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+// _paq.push(['trackPageView']);
+// _paq.push(['enableLinkTracking']);
+// (function() {
+//   var u="//matomo.datafund.io/";
+//   _paq.push(['setTrackerUrl', u+'piwik.php']);
+//   _paq.push(['setSiteId', '6']);
+//   var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+//   g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+// })();</script>
 </body>
 
 </html>
