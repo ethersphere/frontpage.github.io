@@ -33,7 +33,7 @@ jobs:
         run: |
           yarn
           yarn gulp
-          echo "swarm.ethereum.org" > ./dist/CNAME
+          echo "www.ethswarm.org" > ./dist/CNAME
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
