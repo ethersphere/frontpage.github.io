@@ -57,6 +57,11 @@ let inline_js_css = function () {
     ).pipe(dest('dist/'));
 };
 
+let copy_book = function () {
+  return src('./src/The-Book-of-Swarm.pdf')
+    .pipe(dest('./dist/'));
+}
+
 // exports.inline_js_css = inline_js_css;
 exports.default = series(
   inline_fonts1,
@@ -66,5 +71,6 @@ exports.default = series(
   inline_fonts5,
   inline_fonts6,
   inline_imgs,
-  inline_js_css
+  inline_js_css,
+  copy_book
 );
