@@ -62,6 +62,12 @@ let copy_book = function () {
     .pipe(dest('./dist/'));
 }
 
+let copy_whitepaper = function () {
+  return src('./src/swarm-whitepaper.pdf')
+    .pipe(dest('./dist/'));
+}
+
+
 // exports.inline_js_css = inline_js_css;
 exports.default = series(
   inline_fonts1,
@@ -72,5 +78,6 @@ exports.default = series(
   inline_fonts6,
   inline_imgs,
   inline_js_css,
-  copy_book
+  copy_book,
+  copy_whitepaper
 );
