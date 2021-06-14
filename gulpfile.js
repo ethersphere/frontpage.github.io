@@ -67,6 +67,11 @@ let copy_whitepaper = function () {
     .pipe(dest('./dist/'));
 }
 
+let copy_ics = function () {
+  return src('./src/Swarm_One_Event.ics')
+    .pipe(dest('./dist/'));
+}
+
 
 // exports.inline_js_css = inline_js_css;
 exports.default = series(
@@ -79,5 +84,6 @@ exports.default = series(
   inline_imgs,
   inline_js_css,
   copy_book,
-  copy_whitepaper
+  copy_whitepaper,
+  copy_ics
 );
