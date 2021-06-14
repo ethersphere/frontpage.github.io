@@ -85,5 +85,5 @@ exports.default = series(
   inline_js_css,
   copy_book,
   copy_whitepaper,
-  copy_ics
+  copy_ics,
 );
