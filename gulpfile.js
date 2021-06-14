@@ -58,9 +58,15 @@ let inline_js_css = function () {
 };
 
 let copy_book = function () {
-  return src('./src/The-Book-of-Swarm.pdf')
+  return src('./src/the-book-of-swarm.pdf')
     .pipe(dest('./dist/'));
 }
+
+let copy_book_dc = function () {
+  return src('./src/the-book-of-swarm.pdf')
+    .pipe(dest('./dist/'));
+}
+
 
 let copy_whitepaper = function () {
   return src('./src/swarm-whitepaper.pdf')
@@ -85,5 +91,6 @@ exports.default = series(
   inline_js_css,
   copy_book,
   copy_whitepaper,
-  copy_ics
+  copy_ics,
+  copy_book_dc
 );
