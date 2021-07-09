@@ -669,6 +669,10 @@ footer .footer-bottom div:first-child {
   font-style: oblique;
 }
 
+.more.btn.btn-orange + .more.btn.btn-orange {
+  margin-top: 0;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
   footer .footerlinks.fl1 p, 
