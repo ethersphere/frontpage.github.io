@@ -43,26 +43,22 @@
   <link rel="stylesheet" href="../generated-fonts/WorkSans500.css">
   <link rel="stylesheet" href="../generated-fonts/WorkSansRegular.css">
   <link rel="stylesheet" href="../generated-fonts/FontAwesome.css">
-
+  <script src="https://unpkg.com/@ethersphere/bee-js/dist/index.browser.min.js"></script>
   <script>
 
     async function getHTML() {
-      let gateway = "https://swarm-gateways.net/bzz:/";
+      let gateway = "https://bee-9.gateway.ethswarm.org/";
       let html2Save = document.getElementsByTagName("HTML")[0].outerHTML;
       document.getElementById("publishbtn").remove()
-      let formData = new FormData();
-      formData.append('index.html', html2Save);
-      let response = await axios.post(gateway, formData, {
-        headers: {
-          'Content-Type': 'text/html'
-        }
-      });
+      let bee = new BeeJs.Bee(gateway)
+      let ps = 'a39db523f5effb15ba605fa31c58599a472278e806f72544b0661724dee89995'
+      bee.uploadFile(ps, html2Save, 'index.html', { contentType: 'text/html'} ).then(function(response) {
+        console.log({response})
 
-      console.log(response)
-
-      setTimeout(function () {
-        window.location.href = gateway + '/' + response.data + "/index.html";
-      }, 2000)
+        setTimeout(function () {
+          window.location.href = gateway + '/bzz/' + response.reference + "/index.html";
+        }, 2000)
+      })
     }
   </script>
 
