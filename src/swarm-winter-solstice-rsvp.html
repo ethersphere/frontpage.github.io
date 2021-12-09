@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Swarm Winter Solstice Event</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=yes">
+  <meta name="description" content="Swarm Winter Solstice Event">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- From Favicon generator -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="shortcut icon" href="images/favicon/favicon-16x16.png" type="image/x-icon">
+
+  <title>Swarm One</title>
+
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
+  <link href="swarm.css" rel="stylesheet">
+  <link rel="stylesheet" href="../generated-fonts/IBMPlexMonoRegular.css">
+  <link rel="stylesheet" href="../generated-fonts/IBMPlexMono500.css">
+  <link rel="stylesheet" href="../generated-fonts/IBMPlexMono600.css">
+  <link rel="stylesheet" href="../generated-fonts/WorkSans500.css">
+  <link rel="stylesheet" href="../generated-fonts/WorkSansRegular.css">
+  <link rel="stylesheet" href="../generated-fonts/FontAwesome.css">
+
+  <script>
+    async function getHTML() {
+      let gateway = "https://swarm-gateways.net/bzz:/";
+      let html2Save = document.getElementsByTagName("HTML")[0].outerHTML;
+      document.getElementById("publishbtn").remove()
+      let formData = new FormData();
+      formData.append('index.html', html2Save);
+      let response = await axios.post(gateway, formData, {
+        headers: {
+          'Content-Type': 'text/html'
+        }
+      });
+
+      console.log(response)
+
+      setTimeout(function() {
+        window.location.href = gateway + '/' + response.data + "/index.html";
+      }, 2000)
+    }
+  </script>
+  <!-- Mautic form -->
+  <script type="text/javascript">
+    /** This section is only needed once per page if manually copying **/
+    if (typeof MauticSDKLoaded == 'undefined') {
+      var MauticSDKLoaded = true;
+      var head = document.getElementsByTagName('head')[0];
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = 'https://mautic.int.ethswarm.org/index.php/media/js/mautic-form.js';
+      script.onload = function() {
+        MauticSDK.onLoad();
+      };
+      head.appendChild(script);
+      var MauticDomain = 'https://mautic.int.ethswarm.org/index.php';
+      var MauticLang = {
+        'submittingMessage': "Please wait..."
+      }
+    } else if (typeof MauticSDK != 'undefined') {
+      MauticSDK.onLoad();
+    }
+  </script>
+
+
+
+
+  <!-- Mautic newsletter end -->
+
+
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="170">
+
+  <!--HEADER START-->
+
+  <header id="header">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <div class="container">
+        <img class="navbar-brand float-left logo" src="images/swarm-logo-orange.svg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><span class="navlink">Home</span>
+                <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!--HEADER END-->
+  <!--BODY START-->
+  <div id="body-wrap">
+
+    <section class="section-light" id="section-what">
+      <div class="container">
+        <div class="section-content">
+          <h5>
+            21.12.2021 15:00 CET
+          </h5>
+          <h2>
+            Swarm Winter Solstice Event
+          </h2>
+          <h2 class="answer">It’s finally here. Join the event.</h2>
+          <h4 class="subtext">
+            Swarm Foundation has announced the mainnet launch of Swarm Network. This release will be celebrated with an online event on <b></b>21 June 2021 - 15:00 CET</b>, where more information will be revealed.
+            <br> <br>
+            As usual, there will be many interesting talks, demos and presentations. We’re still working on the exact programme, but register for the event and get notified via email when it’s done.
+
+          </h4>
+          <div class="spacer"></div>
+          <!-- Mautic code -->
+          <style type="text/css" scoped>
+            @import url(https://fonts.googleapis.com/css?family=Work+Sans);
+
+            .mauticform_wrapper {
+              max-width: 600px;
+              margin: 10px 0;
+              font-family: 'Work Sans', 'Helvetica Neue', 'Arial', 'sans-serif' !important;
+              color: #37302d;
+            }
+
+            .mauticform-innerform {}
+
+            .mauticform-post-success {}
+
+            .mauticform-name {
+              font-weight: bold;
+              font-size: 1.5em;
+              margin-bottom: 3px;
+            }
+
+            .mauticform-description {
+              margin-top: 2px;
+              margin-bottom: 10px;
+            }
+
+            .mauticform-error {
+              margin-bottom: 10px;
+              color: #dd7200;
+            }
+
+            .mauticform-message {
+              margin-bottom: 10px;
+              color: #dd7200;
+            }
+
+            .mauticform-row {
+              display: block;
+              margin-bottom: 20px;
+            }
+
+            .mauticform-label {
+              font-size: 0.9em;
+              display: block;
+              font-weight: bold;
+              margin-bottom: 5px;
+            }
+
+            .mauticform-row.mauticform-required .mauticform-label:after {
+              color: #e32;
+              content: " *";
+              display: inline;
+            }
+
+            .mauticform-helpmessage {
+              display: block;
+              font-size: 0.9em;
+              margin-bottom: 3px;
+            }
+
+            .mauticform-errormsg {
+              display: block;
+              color: red;
+              margin-top: 2px;
+            }
+
+            .mauticform-selectbox,
+            .mauticform-input,
+            .mauticform-textarea {
+              width: 100%;
+              padding: 0.5em 0.5em;
+              border: 1px solid #CCC;
+              background: #fff;
+              box-shadow: 0px 0px 0px #fff inset;
+              box-sizing: border-box;
+            }
+
+            .mauticform-checkboxgrp-row {}
+
+            .mauticform-checkboxgrp-label {
+              font-weight: normal;
+            }
+
+            .mauticform-checkboxgrp-checkbox {}
+
+            .mauticform-radiogrp-row {}
+
+            .mauticform-radiogrp-label {
+              font-weight: normal;
+            }
+
+            .mauticform-radiogrp-radio {}
+
+            .mauticform-button-wrapper .mauticform-button.btn-default {
+              color: #fff;
+              background-color: #dd7200;
+              border-color: ##dd7200;
+            }
+
+            .mauticform-button-wrapper .mauticform-button {
+              display: inline-block;
+              margin-bottom: 0;
+              font-weight: 600;
+              text-align: center;
+              vertical-align: middle;
+              cursor: pointer;
+              background-image: none;
+              border: 1px solid transparent;
+              white-space: nowrap;
+              padding: 8px 16px;
+              font-size: 15px;
+              line-height: 1.3856;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+
+            .mauticform-button-wrapper .mauticform-button.btn-default[disabled] {
+              background-color: #ffffff;
+              border-color: #dddddd;
+            }
+          </style>
+
+
+
+
+          <div id="mauticform_wrapper_wintersolsticeeventsubscription" class="mauticform_wrapper">
+            <form autocomplete="false" role="form" method="post" action="https://mautic.int.ethswarm.org/form/submit?formId=8" id="mauticform_wintersolsticeeventsubscription" data-mautic-form="wintersolsticeeventsubscription" enctype="multipart/form-data">
+              <div class="mauticform-error" id="mauticform_wintersolsticeeventsubscription_error"></div>
+              <div class="mauticform-message" id="mauticform_wintersolsticeeventsubscription_message"></div>
+              <div class="mauticform-innerform">
+                <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
+                  <div id="mauticform_wintersolsticeeventsubscription_email_address" class="mauticform-row mauticform-email mauticform-field-1">
+                    <input id="mauticform_input_wintersolsticeeventsubscription_email_address" name="mauticform[email_address]" value="" class="mauticform-input" type="email" placeholder="your email" />
+                    <span class="mauticform-errormsg" style="display: none"></span>
+                  </div>
+                  <div id="mauticform_wintersolsticeeventsubscription_gdpr_accepted" data-validate="gdpr_accepted" data-validation-type="radiogrp" class="mauticform-row mauticform-radiogrp mauticform-field-2 mauticform-required">
+                    <label class="mauticform-label" for="mauticform_radiogrp_radio_gdpr_accepted_Yes1">I consent to usage of my given e-mail address for receiving
+                      communication and news about the Swarm project. Data will be
+                      controlled and processed by Swarm Foundation.</label>
+                    <div class="mauticform-radiogrp-row">
+                      <input name="mauticform[gdpr_accepted]" class="mauticform-radiorp-radio" id="mauticform_radiogrp_radio_gdpr_accepted_Yes0" type="radio" value="Yes" />
+                      <label id="mauticform_radiogrp_label_gdpr_accepted_Yes0" for="mauticform_radiogrp_radio_gdpr_accepted_Yes0" class="mauticform-radiogrp-label">Yes</label>
+                    </div>
+                    <span class="mauticform-errormsg" style="display: none">You need to accept to be able to contacted.</span>
+                  </div>
+
+                  <div id="mauticform_wintersolsticeeventsubscription_i_consent_to_gathering_an" data-validate="i_consent_to_gathering_an" data-validation-type="radiogrp" class="mauticform-row mauticform-radiogrp mauticform-field-3 mauticform-required">
+                    <label class="mauticform-label" for="mauticform_radiogrp_radio_i_consent_to_gathering_an_Yes1">I consent to gathering and analysis of the data generated by
+                      my responses and clicks to the received communication and news
+                      for the purposes of better understanding and communicating
+                      with the Swarm user base. Data will be controlled and
+                      processed by Swarm Foundation.</label>
+                    <div class="mauticform-radiogrp-row">
+                      <input name="mauticform[i_consent_to_gathering_an]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_i_consent_to_gathering_an_Yes0" type="radio" value="Yes" />
+                      <label id="mauticform_radiogrp_label_i_consent_to_gathering_an_Yes0" for="mauticform_radiogrp_radio_i_consent_to_gathering_an_Yes0" class="mauticform-radiogrp-label">Yes</label>
+                    </div>
+                    <span class="mauticform-errormsg" style="display: none">You need to accept to be able to contacted.</span>
+                  </div>
+
+                  <div id="mauticform_wintersolsticeeventsubscription_submit" class="mauticform-row mauticform-button-wrapper mauticform-field-4">
+                    <button type="submit" name="mauticform[submit]" id="mauticform_input_wintersolsticeeventsubscription_submit" value="" class="mauticform-button btn btn-default">
+                      register
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <input type="hidden" name="mauticform[formId]" id="mauticform_wintersolsticeeventsubscription_id" value="8" />
+              <input type="hidden" name="mauticform[return]" id="mauticform_wintersolsticeeventsubscription_return" value="" />
+              <input type="hidden" name="mauticform[formName]" id="mauticform_wintersolsticeeventsubscription_name" value="wintersolsticeeventsubscription" />
+            </form>
+          </div>
+          <!-- End Mautic code -->
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!--BODY END-->
+  <!--FOOTER START-->
+  <footer>
+    <div class="container">
+      <div class="row footer-bottom">
+        <div class="col-sm-6">
+          <p>Other Swarm links</p>
+          <div class="footerlinks">
+            <p><a href="https://gateway.ethswarm.org" target="_blank">Swarm Gateway</a></p>
+            <p><a href="https://www.ethswarm.org/swarm-whitepaper.pdf" target="_blank">White Paper</a></p>
+            <p><a href="https://www.ethswarm.org/The-Book-of-Swarm.pdf" target="_blank">Book of Swarm</a></p>
+            <p><a href="https://ethswarm.org/" target="_blank">EthSwarm.org</a></p>
+            <p><a href="https://docs.ethswarm.org/" target="_blank">Bee Documentation</a></p>
+            <p><a href="privacy-policy.html">Privacy Policy</a></p>
+            <p><a href="faqs.html">FAQs</a></p>
+
+          </div>
+        </div>
+        <div class="col-sm-6 text-right">
+          <p>Find Swarm on</p>
+          <div class="footerlinks fl1">
+            <p><a href="https://discord.gg/GU22h2utj6" target="_blank">Discord</a></p>
+            <p><a href="https://medium.com/ethereum-swarm" target="_blank">Blog</a></p>
+            <p><a href="https://github.com/ethersphere" target="_blank">Github</a></p>
+            <p><a href="https://twitter.com/ethswarm" target="_blank">Twitter</a></p>
+            <p><a href="https://www.youtube.com/channel/UCu6ywn9MTqdREuE6xuRkskA/" target="_blank">Youtube</a></p>
+            <p><a href="https://www.reddit.com/r/EthSwarm/" target="_blank">Reddit</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--FOOTER END-->
+  <script src="assets/axios.min.js"></script>
+  <script src="assets/moment.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+  <script src="scripts.js"></script>
+
+  <script type="text/javascript" src="assets/editor.js"></script>
+  <script type="text/javascript" src="assets/header.js"></script>
+  <script type="text/javascript" src="assets/link.js"></script>
+  <script type="text/javascript" src="assets/simple-image.js"></script>
+  <script type="text/javascript" src="assets/list.js"></script>
+  <!--
+  <script>
+    let editor = new EditorJS({
+      holder: "editorjs",
+      autofocus: true,
+      placeholder: 'Let`s write an awesome story!',
+
+      tools: {
+        header: Header,
+        image: SimpleImage,
+        list: {
+          class: List,
+          inlineToolbar: true,
+        },
+      },
+    })
+  </script>
+-->
+
+
+</body>
+
+</html>
