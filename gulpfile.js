@@ -68,7 +68,7 @@ let copy_ics = function () {
   return src("./src/Swarm_One_Event.ics").pipe(dest("./dist/"));
 };
 
-let copy_ics = function () {
+let copy_ics2 = function () {
   return src("./src/swarm_gather_event.ics").pipe(dest("./dist/"));
 };
 
@@ -84,5 +84,6 @@ exports.default = series(
   inline_js_css,
   copy_book,
   copy_whitepaper,
-  copy_ics
+  copy_ics,
+  copy_ics2
 );
