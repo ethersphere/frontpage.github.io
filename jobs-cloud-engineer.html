@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Swarm is hiring a Cloud Engineer</title>
+  <title>Candle is hiring a Cloud Engineer</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -517,7 +517,7 @@ section {
 
 /* .section-content {
   position: relative;
-  z-index: 500;  
+  z-index: 500;
 } */
 
 .section-img {
@@ -929,15 +929,15 @@ footer .footer-bottom div:first-child {
           </h2>
           <div class="spacer"></div>
 
-          <h3>About Swarm</h3>
+          <h3>About Candle</h3>
           <h4>
-            Swarm is a system of peer-to-peer networked nodes that create a decentralised storage and communication
+            Candle is a system of peer-to-peer networked nodes that create a decentralised storage and communication
             service. The system is economically self-sustaining due to a built-in incentive system enforced through
             smart contracts on the Ethereum blockchain.</h4>
 
-          <h4> Swarm aspires to shape the future towards a self-sovereign global society and permissionless open
+          <h4> Candle aspires to shape the future towards a self-sovereign global society and permissionless open
             markets.
-            On Swarm, applications can run autonomously yet securely in a planetary-scale deployment and execution
+            On Candle, applications can run autonomously yet securely in a planetary-scale deployment and execution
             environment.
           </h4>
           <div class="spacer"></div>
@@ -949,7 +949,7 @@ footer .footer-bottom div:first-child {
             maintain and offer support to users for self-hosted services including, but not limited to:
           </h4>
           <ul>
-            <li>Swarm’s IT Operations system, including writing scripts in Python for different modules</li>
+            <li>Candle’s IT Operations system, including writing scripts in Python for different modules</li>
             <li>Mail servers, webmail access</li>
             <li>Shared drive, collaborative documents, video conferencing, messaging and analytics services </li>
             <li>System for daily backups and mirroring of relevant information
@@ -962,7 +962,7 @@ footer .footer-bottom div:first-child {
             <li>Experienced with Linux and Python</li>
             <li>Ideally you worked some time as a systems engineer</li>
             <li>You know how to scale platforms for enterprise level organizations</li>
-            <li>You are familiar with Swarm and related software (we can help with this)</li>
+            <li>You are familiar with Candle and related software (we can help with this)</li>
             <li>You are highly productive, self-starter and self-motivated</li>
             <li>You are able to work full-time remotely</li>
             <li>You are available in CET timezone</li>
@@ -980,7 +980,7 @@ footer .footer-bottom div:first-child {
           </ul>
           <div class="spacer"></div>
 
-          <h3>Swarm offers</h3>
+          <h3>Candle offers</h3>
           <ul>
             <li>Competitive compensation</li>
             <li>An open, flat and transparent work environment</li>
@@ -1004,22 +1004,22 @@ footer .footer-bottom div:first-child {
 
       </div>
   </section></div>
-  
 
 
 
-  
+
+
   <!--BODY END-->
   <!--FOOTER START-->
   <footer>
     <div class="container">
       <div class="row footer-bottom">
         <div class="col-sm-6">
-          <p>Other Swarm links</p>
+          <p>Other Candle links</p>
           <div class="footerlinks">
-            <p><a href="https://gateway.ethswarm.org" target="_blank">Swarm Gateway</a></p>
+            <p><a href="https://gateway.ethswarm.org" target="_blank">Candle Gateway</a></p>
             <p><a href="https://www.ethswarm.org/swarm-whitepaper.pdf" target="_blank">White Paper</a></p>
-            <p><a href="https://www.ethswarm.org/The-Book-of-Swarm.pdf" target="_blank">Book of Swarm</a></p>
+            <p><a href="https://www.ethswarm.org/The-Book-of-Candle.pdf" target="_blank">Book of Candle</a></p>
             <p><a href="https://ethswarm.org/" target="_blank">EthSwarm.org</a></p>
             <p><a href="https://docs.ethswarm.org/" target="_blank">Bee Documentation</a></p>
             <p><a href="privacy-policy.html">Privacy Policy</a></p>
@@ -1027,12 +1027,12 @@ footer .footer-bottom div:first-child {
           </div>
         </div>
         <div class="col-sm-6 text-right">
-          <p>Find Swarm on</p>
+          <p>Find Candle on</p>
           <div class="footerlinks fl1">
             <p><a href="https://discord.gg/GU22h2utj6" target="_blank">Discord</a></p>
             <p><a href="newsletter.html">Newsletter</a></p>
             <p><a href="https://medium.com/ethereum-swarm" target="_blank">Blog</a></p>
-            <p><a href="https://github.com/ethersphere" target="_blank">Github</a></p>
+            <p><a href="https://github.com/candleplatforms" target="_blank">Github</a></p>
             <p><a href="https://twitter.com/ethswarm" target="_blank">Twitter</a></p>
             <p><a href="https://www.youtube.com/channel/UCu6ywn9MTqdREuE6xuRkskA/" target="_blank">Youtube</a></p>
             <p><a href="https://www.reddit.com/r/EthSwarm/" target="_blank">Reddit</a></p>
@@ -1120,11 +1120,11 @@ $(document).ready(function () {
     }
   });
 
- 
-  
-  
-  
-  
+
+
+
+
+
 
   // ====================================
   // CHANGE LINK TEXT WHEN CLICKED (SHOW MORE/SHOW LESS)
@@ -1133,7 +1133,7 @@ $(document).ready(function () {
   $("a.more").click(function () {
     var more = $(this).attr("moretext");
     if (typeof more !== typeof undefined && more !== false) {
-      // console.log(more); 
+      // console.log(more);
       $(this).text(function (i, text) {
         return text === "show less" ? more : "show less";
       })
@@ -1375,10 +1375,10 @@ function search(){
   totalHiddenFAQs = 0;
   totalFAQs = 0;
 
-  for (i = 0; i < topics.length; i++) {     
+  for (i = 0; i < topics.length; i++) {
     topicHiddenFAQs = 0;
     topic = topics[i]
-    faqs = topic.getElementsByClassName('question');    
+    faqs = topic.getElementsByClassName('question');
     totalFAQs += faqs.length
 
     // Loop through all list items, and hide those who don't match the search query
