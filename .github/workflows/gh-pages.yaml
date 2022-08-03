@@ -22,25 +22,14 @@ jobs:
       - name: Install gulp
         run: npm install --global gulp-cli
 
-      - name: Setup swarm
-        run: |
-          printf ${{ secrets.KEY_PASS }} > password
-          mkdir -p ${HOME}/.ethereum/keystore
-          printf ${{ secrets.KEY_FILE }} > ${HOME}/.ethereum/keystore/UTC--2020-11-16T12-11-14.436704620Z--a852392e68c45598eb21070ac142274ad6097778
-          wget https://ethswarm.blob.core.windows.net/builds/swarm-linux-amd64-0.5.7-5ccfd995.tar.gz -O swarm.tar.gz
-          tar --strip-components 1 -xzf swarm.tar.gz
       - name: Build
         run: |
           yarn
           yarn gulp
           echo "www.ethswarm.org" > ./dist/CNAME
+
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-      - name: Swarm upload
-        run: |
-          rm ./dist/.nojekyll || true
-          FEED=$(./swarm --bzzapi https://swarm-public-0-swarm.prod.swarm-gateways.net --verbosity 6 --recursive --defaultpath ./dist/index.html up ./dist)
-          ./swarm --bzzapi https://swarm-gateways.net/ --verbosity 6 --password password feed update 0x"${FEED}"
