@@ -1,20 +1,16 @@
 import * as React from "react";
-import Link from "next/link";
 import { cx } from "utils";
 import ButtonInternals from "./button/ButtonInternals";
 import { ButtonBackgroundType, ButtonTextColorType } from "types";
+import { useOsAsset } from "hooks/useOsAsset";
 
 type ButtonProps = {
   background: ButtonBackgroundType;
   color: ButtonTextColorType;
-  href?: string;
-  title?: string;
   arrow?: boolean;
 };
 
-const Button: React.FC<ButtonProps> = ({
-  href = "",
-  title = "",
+const DownloadButton: React.FC<ButtonProps> = ({
   arrow = false,
   background = "orange",
   color = "black",
@@ -39,28 +35,29 @@ const Button: React.FC<ButtonProps> = ({
     classNameColor = "text-gray-100";
   }
 
+  const asset: any = useOsAsset("ethersphere/swarm-desktop");
+
+  // If asset does not exist or unknown platform, we return
+  if (!asset || asset.osName === "Unknown") {
+    return null;
+  }
+
   const className = cx(
     "transition duration-200 uppercase inline-flex justify-center items-center text-lg font-semibold tracking-wider px-4 py-2 font-display gap-2 group focus:outline-none",
     classNameBackground,
     classNameColor
   );
 
-  // If href starts with http, we use anchor html tag, otherwise we use next/link
-  if (href.startsWith("http")) {
-    return (
-      <a href={href} target="_blank" rel="noreferrer" className={className}>
-        <ButtonInternals title={title} arrow={arrow} />
-      </a>
-    );
-  }
-
   return (
-    <Link href={href}>
-      <a className={className}>
-        <ButtonInternals title={title} arrow={arrow} />
-      </a>
-    </Link>
+    <a
+      href={asset.asset.browser_download_url}
+      target="_blank"
+      rel="noreferrer"
+      className={className}
+    >
+      <ButtonInternals title={`Download for ${asset.osName}`} arrow={arrow} />
+    </a>
   );
 };
 
-export default Button;
+export default DownloadButton;

@@ -14,6 +14,7 @@ export type CtaType = {
   background?: ButtonBackgroundType;
   color?: ButtonTextColorType;
   arrow?: boolean;
+  type?: "default" | "download";
 };
 
 export type LinkType = {

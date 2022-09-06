@@ -28,11 +28,11 @@ const Hero: React.FC<HeroProps> = ({
 }) => {
   return (
     <section className="relative flex flex-col items-center h-full min-h-screen overflow-hidden text-gray-100 bg-gray-800">
-      <div className="absolute inset-0 flex items-end justify-end w-full h-full pointer-events-none">
+      <div className="absolute inset-0 flex items-start justify-end w-full h-full overflow-hidden pointer-events-none">
         <img
           src={background.src}
           alt={background.alt}
-          className="w-[70vw] z-0 object-contain"
+          className="w-[80vw] sm:w-[66vw] md:-mr-32 lg:w-[70vw] lg:-mr-64 xl:-mr-40 2xl:-mr-52 top-0 z-0 object-contain"
         />
       </div>
 

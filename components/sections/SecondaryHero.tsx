@@ -25,7 +25,7 @@ const SecondaryHero: React.FC<SecondaryHeroProps> = ({
   return (
     <div id={id} className="relative flex justify-center">
       {/* Whitelist Tailwind classes */}
-      <div className="absolute hidden pointer-events-none top-32" />
+      <div className="absolute hidden pointer-events-none top-32 md:left-16" />
 
       <div className="absolute z-0 w-screen min-h-screen pointer-events-none bg-gray-gradient"></div>
       <Container
@@ -42,7 +42,7 @@ const SecondaryHero: React.FC<SecondaryHeroProps> = ({
         {background && background.src.length > 0 && (
           <img
             className={cx(
-              "absolute w-screen pointer-events-none",
+              "absolute w-screen pointer-events-none max-w-[1440px] mx-auto",
               background.class
                 ? background.class
                 : index === 0

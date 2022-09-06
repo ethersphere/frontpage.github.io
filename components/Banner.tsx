@@ -33,12 +33,14 @@ const Banner: React.FC<BannerProps> = () => {
     <div className="absolute top-0 left-0 right-0 z-20 hidden text-white bg-black lg:block">
       <div className="py-4 px-4.5 flex items-center justify-between">
         <div className="flex items-center text-xs font-semibold leading-none text-gray-300 gap-x-2">
-          {color && <Semaphore color={color} />}
+          <Semaphore color={"green"} />
+          <div>Network active</div>
+          {/* {color && <Semaphore color={color} />}
           {isLoading === true ? (
             <div>{content.loading}</div>
           ) : (
             <div>{nodes}</div>
-          )}
+          )} */}
 
           <StatsIcon className="w-3.5 h-3.5" />
 
