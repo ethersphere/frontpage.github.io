@@ -1,0 +1,21 @@
+import * as React from "react";
+import { IconProps } from "@/icons/type";
+
+const OpenIcon: React.FC<IconProps> = ({ className }) => (
+  <svg
+    className={className}
+    viewBox="0 0 35 40"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M23.12 4.27 17.45 1 11 4.74M24.52 34.92l-6.87 3.96-.2.12-5.92-3.41M6.67 32.78 1 29.5v-7.16M27.98 7.08l5.73 3.3.2.12v6.22M33.9 22.35v7.16l-4.5 2.6M1 16.73V10.5l.2-.11 4.9-2.84M17.45 10.65V1M17.45 38.54V28.43M9.65 15.27 1.2 10.4M33.7 29.17l-8.66-5.01M9.86 24.16l-8.66 5M33.7 10.4l-8.44 4.87"
+      stroke="currentColor"
+      strokeWidth="1.3"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+    />
+  </svg>
+);
+
+export default OpenIcon;
