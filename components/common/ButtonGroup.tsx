@@ -2,6 +2,7 @@ import * as React from "react";
 
 import { cx } from "utils";
 import Button from "./Button";
+import ButtonDownload from "./ButtonDownload";
 import { ButtonBackgroundType, ButtonTextColorType, CtaType } from "types";
 
 type ButtonGroupProps = {
@@ -17,6 +18,11 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({
     return null;
   }
 
+  const buttonTypes: any = {
+    default: Button,
+    download: ButtonDownload,
+  };
+
   return (
     <div
       className={cx(
@@ -24,16 +30,20 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({
         className
       )}
     >
-      {ctas.map((cta, index) => (
-        <Button
-          key={index}
-          background={cta.background as ButtonBackgroundType}
-          color={cta.color as ButtonTextColorType}
-          title={cta.title}
-          href={cta.href}
-          arrow={cta.arrow}
-        />
-      ))}
+      {ctas.map((cta, index) => {
+        const ButtonTag: any = buttonTypes[cta.type ?? "default"];
+
+        return (
+          <ButtonTag
+            key={index}
+            background={cta.background as ButtonBackgroundType}
+            color={cta.color as ButtonTextColorType}
+            title={cta.title}
+            href={cta.href}
+            arrow={cta.arrow}
+          />
+        );
+      })}
     </div>
   );
 };

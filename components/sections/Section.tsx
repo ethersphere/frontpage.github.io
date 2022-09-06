@@ -10,7 +10,7 @@ type SectionProps = {
 
 const Section: React.FC<SectionProps> = ({ index, hero, items = [] }) => {
   return (
-    <section className="mb-40 overflow-hidden">
+    <section className="pb-40 md:overflow-hidden">
       {hero ? <SecondaryHero index={index} {...hero} /> : ""}
 
       {items && items.length > 0 && (
