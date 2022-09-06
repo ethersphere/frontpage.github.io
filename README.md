@@ -1,19 +1,27 @@
-# Swarm Frontpage
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-### Contribute
+## Development
 
-#### Using Github
+First, run the development server:
 
-Fork the repo
+```bash
+npm run dev
+```
 
-Work on your copy
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Create a pull request
+## Production
 
-#### Local Development
+```bash
+npm run build
+```
 
-Clone the repo and run `yarn`.
+# Icons
 
-Use live-server to preview
+Icons are in the `./icons/svg` folder, optimized and stripped of the width and height values.
 
-To create a /dist with `yarn gulp`
+Create components from the icons by running:
+
+```bash
+npm run build-icons
+```

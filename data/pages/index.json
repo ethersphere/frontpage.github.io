@@ -1,0 +1,406 @@
+{
+  "hero": {
+    "title": "Digital Freedom Now.",
+    "background": {
+      "src": "/assets/hero_background.png",
+      "alt": "Background graphic"
+    },
+    "content": "<p>Swarm is a decentralised data storage and distribution technology. Ready to power the next generation of censorship-resistant, unstoppable, serverless dapps.</p>",
+    "ctas": [
+      {
+        "href": "/build",
+        "background": "orange-onDark",
+        "color": "black",
+        "arrow": true,
+        "title": "Start building"
+      },
+      {
+        "href": "/build/desktop",
+        "background": "transparent",
+        "color": "gray",
+        "arrow": true,
+        "title": "Run your node"
+      }
+    ],
+    "quote": "“If Ethereum is the world’s CPU, Swarm is the world’s Hard Drive” - Viktor Tron"
+  },
+  "unstoppable": {
+    "tagline": "Privacy for individuals ↔ Trust for the data economy",
+    "title": "Unstoppable data",
+    "content": "<p>Swarm continues where the blockchain ends, making the world computer real.</p>",
+    "ctas": [
+      {
+        "href": "/why",
+        "background": "orange",
+        "color": "black",
+        "arrow": true,
+        "title": "Why Swarm"
+      },
+      {
+        "href": "/why#how",
+        "background": "transparent",
+        "color": "black",
+        "arrow": true,
+        "title": "How it works"
+      }
+    ],
+    "features_type": "three",
+    "features": [
+      {
+        "title": "Open & Borderless",
+        "content": "Swarm is open source code, limited only by the people who use and maintain it - Join a community building the future of the web.",
+        "icon": "OpenIcon"
+      },
+      {
+        "title": "Fault-tolerant",
+        "content": "Redundant storage with local replication ensures data availability even in the face of node dropouts or data loss.",
+        "icon": "FaultIcon"
+      },
+      {
+        "title": "No downtime",
+        "content": "Swarm is decentralized and distributed, and so it’s also always up, making it stable and reliable.",
+        "icon": "DowntimeIcon"
+      },
+      {
+        "title": "Privacy first",
+        "content": "Swarm nodes provide cryptographic support enabling you to use network in an unrestricted way while building blocks like “Single-owner-chunks” enable extraordinary zero-leak privacy.",
+        "icon": "PrivacyIcon"
+      },
+      {
+        "title": "DDOS resistant",
+        "content": "Swarm network is fully decentralised peer-to-peer network while it’s resilience against DDoS grows with every additional node in the network.",
+        "icon": "DdosIcon"
+      },
+      {
+        "title": "Credible neutrality",
+        "content": "Swarm is built to not discriminate - it’s in the very nature of our design, and permeates throughout our mission.",
+        "icon": "CredibleIcon"
+      }
+    ]
+  },
+  "wikipedia": {
+    "titleSuffix": "on Swarm",
+    "tagline": "In the spotlight",
+    "content": "<p>Swarm powers a decentralized and unstoppable mirror of Wikipedia, making access to knowledge universal.</p>",
+    "ctas": [
+      {
+        "href": "https://gitcoin.co/issue/28926",
+        "background": "black",
+        "color": "gray",
+        "arrow": true,
+        "title": "Participate"
+      },
+      {
+        "href": "https://gitcoin.co/explorer?network=mainnet&idx_status=open&applicants=ALL&order_by=-_val_usd_db&org=fairdatasociety",
+        "background": "transparent",
+        "color": "black",
+        "arrow": true,
+        "title": "Check other bounties"
+      }
+    ]
+  },
+  "develop": {
+    "tagline": "Real-world ready",
+    "title": "Develop fast and free",
+    "content": "<p>Swarm provides a complete stack of essential base layer components for developers. Create and host dApps, NFT meta-data, and media files decentralised!</p>",
+    "ctas": [
+      {
+        "href": "/build",
+        "background": "orange",
+        "color": "black",
+        "arrow": true,
+        "title": "Swarm stack"
+      },
+      {
+        "href": "https://desktop.ethswarm.org",
+        "background": "transparent",
+        "color": "black",
+        "arrow": true,
+        "title": "Desktop app"
+      }
+    ],
+    "tabs": [
+      {
+        "title": "Bee.js",
+        "content": "Bee-js is Bee’s complementary JavaScript library. It’s the technology underpinning the swarm-cli and bee- dashboard tools and is a powerful tool for building completely decentralised apps with just a few lines of code.",
+        "ctas": [
+          {
+            "href": "https://github.com/ethersphere/bee-js",
+            "background": "transparent",
+            "color": "black",
+            "arrow": true,
+            "title": "Documentation"
+          }
+        ],
+        "code": "<div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">1</span> <span class=\"font-bold\">import</span>&nbsp;{&nbsp;Bee&nbsp;}&nbsp;from&nbsp; <span class=\"text-orange-onDark\">\"@ethersphere/bee-js\"</span></div><div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">2</span></div><div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">3</span> <span class=\"font-bold\">const</span>&nbsp;bee&nbsp;=&nbsp;<span class=\"font-bold\">new</span>&nbsp;Bee(<span class=\"text-orange-onDark\">\"http://localhost:1633\"</span>)</div><div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">4</span></div><div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">5</span> <span class=\"text-gray-275 italic mr-4\">// Be aware, this creates on-chain transactions that spend Eth and BZZ!</span></div><div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">6</span> <span class=\"font-bold\">const</span>&nbsp;batchId&nbsp;=&nbsp;await bee.createPostageBatch(<span class=\"text-orange-onDark\">‘100’</span>, 17)</div><div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">7</span> <span class=\"font-bold\">const</span>&nbsp;fileHash&nbsp;=&nbsp;await bee.uploadData(batchId, <span class=\"text-orange-onDark\">\"Bee is awesome!\"</span>)</div><div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">8</span> <span class=\"font-bold\">const</span>&nbsp;data&nbsp;=&nbsp;await bee.downloadData(fileHash)</div><div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">9</span></div><div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">10</span> <span>console.log(data.text())</span>&nbsp;<span class=\"text-gray-275 italic\">// prints ‘Bee is awesome!’</span></div>"
+      },
+      {
+        "title": "Swarm-CLI",
+        "content": "Manage your Bee node and interact with the Swarm network in the command line. Upload and download files, folders and websites, as well as easily manage different feeds, identities, and nodes. Convenient access to even Swarm's more advanced features - including easier devops, postage stamps management from the command line, and other automation.",
+        "ctas": [
+          {
+            "href": "https://github.com/ethersphere/swarm-cli",
+            "background": "transparent",
+            "color": "black",
+            "arrow": true,
+            "title": "GitHub"
+          }
+        ],
+        "code": "<div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >1</span > <span class=\"font-bold\">swarm-cli</span> feed upload dist --topic-string <span class=\"text-orange-onDark\">\"Awesome Swarm Website\"</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >2</span ></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >3</span>&nbsp;<span class=\"mr-4\">? Please select a stamp for this action. Stamp ID Usage (Use arrow keys)&nbsp;&nbsp;&nbsp;<span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >4</span ></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >5</span > Stamp ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usage</div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >6</span > (Use arrow keys)</div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >7</span > 72a2d620385ed69fae10ceZadb7b2876b3a79ee0de193075f11973704593afe4 (1%)</div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >8</span > a699acff6658f1ef44841dZeaZef07f620367bc3c0d791922c546ab07ddccd09 (19%)</div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >9</span > 39ee792a973aa0b28a7a4d8a8cd4b9616f93cb5d365b5d5183113c9f2ffzafb9 (33%)</div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >10</span ></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >11</span > Swarm root hash -> <span class=\"text-orange-onDark\" >937c0fc88583e42086737952cee8c6bd394fc8bb4cfd16c68…</span ></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >12</span > URL -> <span class=\"text-orange-onDark\" >http://localhost:1633/bzz/937c0fc88583e42086737952cee8c6bd394…</span ></div>"
+      },
+      {
+        "title": "Bee API",
+        "content": "The Bee API provides a HTTP interface with a rich set of endpoints for accessing data on the network - manage your node resources and get operational metrics and insights.",
+        "ctas": [
+          {
+            "href": "https://docs.ethswarm.org/api/",
+            "background": "transparent",
+            "color": "black",
+            "arrow": true,
+            "title": "Documentation"
+          }
+        ],
+        "code": "<div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >1</span > <span class=\"text-gray-300\">$</span>&nbsp;curl&nbsp;<span class=\"italic mr-4\" >http://localhost:1633/chequebook/cashout/36b7efd913ca4cf880b8eeac5093fa27b0825906c600685b6abdd6566e6cfe8f</span ></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >2</span ></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >3</span > <span>{</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >4</span > <span class=\"\" >&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"text-orange-onDark\">\"peer\"</span>:&nbsp;<span class=\"text-orange-onDark\">\"36b7efd913ca4cf880b8eeac5093fa27b0825906c600685b6abdd6566e6cfe8f\"</span>, </span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >5</span > <span class=\"\">&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"text-orange-onDark\">\"lastCashedCheque\"</span>:</span>&nbsp;{</div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >6</span > <span class=\"\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"text-orange-onDark\">\"beneficiary\"</span>: <span class=\"text-orange-onDark\">\"36b7efd913ca4cf880b8eeac5093fa27b0825906\"</span>,</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >7</span > <span class=\"\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"text-orange-onDark\">\"chequebook\"</span>: <span class=\"text-orange-onDark\">\"36b7efd913ca4cf880b8eeac5093fa27b0825906\"</span>,</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >8</span > <span class=\"\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"text-orange-onDark\">\"payout\"</span>: <span class=\"text-orange-onDark\">\"1000000000000000000\"</span></span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >9</span > <span class=\"\">&nbsp;&nbsp;&nbsp;&nbsp;},</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >10</span > <span class=\"\">&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"text-orange-onDark\">\"transactionHash\"</span>: <span class=\"text-orange-onDark\">\"0x780cb6a37d1946978087896e1e489c37e30fe3e329510fff8d97360f73529f5a\"</span>,</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >11</span > <span class=\"\">&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"text-orange-onDark\">\"result\"</span>:</span>&nbsp;{</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >12</span > <span class=\"\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"text-orange-onDark\">\"recipient\"</span>: <span class=\"text-orange-onDark\">\"36b7efd913ca4cf880b8eeac5093fa27b0825906\"</span>,</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >13</span > <span class=\"\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"text-orange-onDark\">\"lastPayout\"</span>: <span class=\"text-orange-onDark\">\"1000000000000000000\"</span>,</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >14</span > <span class=\"\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"text-orange-onDark\">\"bounced\"</span>: <span class=\"font-bold\">true</span></span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >15</span > <span class=\"\">&nbsp;&nbsp;&nbsp;&nbsp;},</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >16</span > <span class=\"\">&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"text-orange-onDark\">\"uncashedAmount\"</span>: <span class=\"text-orange-onDark\">\"1000000000000000000\"</span></span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-4 mr-4 text-right text-gray-500 select-none\" >17</span >}</span></div>"
+      }
+    ]
+  },
+  "fairdata": {
+    "tagline": "Interoperability and data sovereignty",
+    "title": "Fair Data Protocol",
+    "content": "<p>Fair data protocol enables a fairer data economy that promotes human rights through privacy, digital sovereignty, and data interoperability, and allows developers to focus on building their dapps rather than reinventing data stores.</p>",
+    "ctas": [
+      {
+        "href": "https://fairdataprotocol.bzz.link/",
+        "background": "white",
+        "color": "black",
+        "arrow": true,
+        "title": "Fair data PROTOCOL"
+      },
+      {
+        "href": "https://fairdatasociety.org/",
+        "background": "transparent",
+        "color": "gray",
+        "arrow": true,
+        "title": "Fair data SOCIETY"
+      }
+    ]
+  },
+  "dapp": {
+    "tagline": "Decentralise web",
+    "title": "Your decentralised web3 dapp in 4 steps",
+    "content": "",
+    "features": [
+      {
+        "title": "1. Fork on GitHub",
+        "content": "Find a forkable project that should be decentralised or extended.",
+        "icon": "ForkIcon"
+      },
+      {
+        "title": "2. Connect to FDP",
+        "content": "Extend it with the Fair data protocol so that users have their data saved in their private data store.",
+        "icon": "ConnectIcon"
+      },
+      {
+        "title": "3. Upload to Swarm",
+        "content": "Once hosted on Swarm it becomes accessible to all, with essentially zero hosting costs for developers.",
+        "icon": "UploadIcon"
+      },
+      {
+        "title": "4. Grow through FDP",
+        "content": "Submit requests to be added in Fairdrive’s dapp store and make it available to existing Fairdrive users.",
+        "icon": "GrowIcon"
+      }
+    ],
+    "ctas": []
+  },
+  "news": {
+    "background": "bg-black",
+    "textColor": "text-gray-100",
+    "content": {
+      "tagline": "What is happening",
+      "title": "Swarm News",
+      "news": [
+        {
+          "href": "https://medium.com/ethereum-swarm/swarm-desktop-app-beta-web3-for-everyone-3ca41088c7bf",
+          "image": {
+            "src": "/assets/news/desktop.png",
+            "alt": "Swarm Desktop App"
+          },
+          "category": "development",
+          "readTime": 3,
+          "title": "Swarm Desktop App - Web3 for everyone",
+          "copy": "The Swarm Foundation unveiled the beta version of the Swarm Desktop App (Beta). Its goal is to take the best from Web2 and replace the complex experience of Web3 with a familiar one.",
+          "cta": {
+            "title": "Read more",
+            "href": "https://medium.com/ethereum-swarm/swarm-desktop-app-beta-web3-for-everyone-3ca41088c7bf",
+            "background": "transparent",
+            "color": "white",
+            "arrow": true
+          }
+        },
+        {
+          "href": "https://medium.com/ethereum-swarm/how-to-bridge-dai-from-ethereum-mainnet-to-gnosis-chain-8008b2d6bb2c",
+          "category": "tutorials",
+          "image": {
+            "src": "/assets/news/wallet.png",
+            "alt": "Wallet"
+          },
+          "readTime": 3,
+          "title": "Bridge DAI from Ethereum Mainnet to Gnosis",
+          "copy": "Your Bee node uses the Gnosis Chain network to buy postage stamps, to keep your files and data alive in…",
+          "cta": {
+            "title": "Read more",
+            "href": "https://medium.com/ethereum-swarm/how-to-bridge-dai-from-ethereum-mainnet-to-gnosis-chain-8008b2d6bb2c",
+            "background": "transparent",
+            "color": "white",
+            "arrow": true
+          }
+        },
+        {
+          "href": "https://medium.com/ethereum-swarm/announcing-50k-dai-prize-to-make-wikipedia-unstoppable-91f60513a873",
+          "category": "bounties",
+          "image": {
+            "src": "/assets/news/wikipedia.jpg",
+            "alt": "Wikipedia news image"
+          },
+          "readTime": 2,
+          "title": "50k DAI prize to make Wikipedia unstoppable",
+          "copy": "The Swarm Association is announcing a 50,000 DAI “Wikipedia on Swarm ”prize (paid in BZZ) for a solution that…",
+          "cta": {
+            "title": "Read more",
+            "href": "https://medium.com/ethereum-swarm/announcing-50k-dai-prize-to-make-wikipedia-unstoppable-91f60513a873",
+            "background": "transparent",
+            "color": "white",
+            "arrow": true
+          }
+        }
+      ],
+      "ctas": [
+        {
+          "href": "https://medium.com/ethereum-swarm",
+          "background": "orange",
+          "color": "black",
+          "arrow": true,
+          "title": "Visit Blog"
+        }
+      ]
+    }
+  },
+  "builders": {
+    "tagline": "One Swarm, united in PLUR, guided by virtue",
+    "title": "Builders on Swarm",
+    "content": "<p>Swarm grants and online events support many interesting projects that are already building their products on top of Swarm.</p>",
+    "features": [
+      {
+        "title": "Etherna",
+        "content": "Etherna is a transparent video platform FOR EVERYONE where freedom of speech is incentivized, not convicted.",
+        "cta": {
+          "href": "https://etherna.io/",
+          "title": "Link"
+        }
+      },
+      {
+        "title": "Dapplets",
+        "content": "Dapplets aims to leverage target websites’ search results to pull data previously uploaded to Swarm, providing an interface for data interchange between the Dapplet and the search result provider.",
+        "cta": {
+          "href": "https://dapplets.org/",
+          "title": "Link"
+        }
+      },
+      {
+        "title": "Copyright Delta",
+        "content": "Copyright Delta is building the Digital Rights Exchange & Network (DRX) which allows users to control their data and decide who has access to it. DRX also enables tokenised management of royalties, licensing and ownership.",
+        "cta": {
+          "href": "https://www.copyrightdelta.com/",
+          "title": "Link"
+        }
+      },
+      {
+        "title": "Social Archive",
+        "content": "SocialArchive will allow users to store their own data, giving them sovereignty to keep it from and/or integrate it with other services if they wish to do so.",
+        "cta": {
+          "href": "https://github.com/codiak/socialarchive-dapp",
+          "title": "Link"
+        }
+      }
+    ],
+    "ctas": [
+      {
+        "href": "https://my.ethswarm.org/grants",
+        "background": "orange",
+        "color": "black",
+        "arrow": true,
+        "title": "Apply for a grant"
+      },
+      {
+        "href": "/grants",
+        "background": "transparent",
+        "color": "black",
+        "arrow": true,
+        "title": "See who’s building"
+      }
+    ]
+  },
+  "millions": {
+    "tagline": "BUILDING A BRIGHTER, UNSTOPPABLE WEBZ",
+    "title": "Builders on Swarm",
+    "content": "<p>Imagine a society where human rights are respected and your data is not used against you to influence what you think.</p><p>Explore the power of art, blockchain, and games and help create a fair, ethical, private, censorship-free, permissionless and unstoppable Web3. Join other like-minded artists, gamers, developers, activists, and crypto-enthusiasts, as well as curious and knowledgeable souls.</p>",
+    "starts_in": {
+      "label": "Starts in:",
+      "date": "2023/03/01 00:00:00"
+    },
+    "ctas": [
+      {
+        "href": "https://www.wearemillions.online/",
+        "background": "white",
+        "color": "black",
+        "arrow": true,
+        "title": "Register"
+      }
+    ]
+  },
+  "bounties": {
+    "tagline": "Moving from knowledge to engagement",
+    "title": "Bounties for impact",
+    "content": "<p>Swarm Bounties are a call to action for experts from various fields to contribute their knowledge and expertise, so we can move closer to a fairer data society.</p>",
+    "features": [
+      {
+        "title": "Bounty #1",
+        "content": "Develop a censorship resistant blog architecture.",
+        "cta": {
+          "href": "https://gitcoin.co/issue/28924",
+          "title": "More"
+        }
+      },
+      {
+        "title": "Bounty #2",
+        "content": "Implement a subgraph to obtain BZZ price data.",
+        "cta": {
+          "href": "https://gitcoin.co/issue/29254",
+          "title": "More"
+        }
+      },
+      {
+        "title": "Bounty #3",
+        "content": "Integrate Social Archive and Dapplets to allow data to be found.",
+        "cta": {
+          "href": "https://gitcoin.co/issue/29165",
+          "title": "More"
+        }
+      },
+      {
+        "title": "Bounty #4",
+        "content": "Integrate WinAMP with Fairdrive."
+      }
+    ],
+    "ctas": [
+      {
+        "href": "https://gitcoin.co/explorer?network=mainnet&idx_status=open&applicants=ALL&order_by=-_val_usd_db&org=fairdatasociety",
+        "background": "orange",
+        "color": "black",
+        "arrow": true,
+        "title": "More at Gitcoin"
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "tagline": "Read, learn, participate",
+  "title": "Swarm Connect",
+  "events_title": "Upcoming events",
+  "events": [
+    {
+      "title": "EthBerlin, Berlin, September 16-18",
+      "href": "https://ethberlin.ooo/",
+      "add_to_calendar": ""
+    },
+    {
+      "title": "WAM Sessions, online, September 20",
+      "href": "https://discord.com/channels/888359049551310869/944944273810403398",
+      "add_to_calendar": ""
+    },
+    {
+      "title": "WAM Sessions, online, September 27",
+      "href": "https://discord.com/channels/888359049551310869/944944273810403398",
+      "add_to_calendar": ""
+    },
+    {
+      "title": "Monthly Ecosystem Call, September 29",
+      "href": "",
+      "add_to_calendar": ""
+    },
+    {
+      "title": "Devcon, Bogota, Oct 11-14",
+      "href": "https://devcon.org/",
+      "add_to_calendar": ""
+    }
+  ],
+  "community_title": "Community",
+  "community": [
+    {
+      "icon": "DiscordIcon",
+      "title": "Discord",
+      "href": "https://discord.ethswarm.org"
+    },
+    {
+      "icon": "GitHubIcon",
+      "title": "GitHub",
+      "href": "https://github.com/ethersphere"
+    },
+    {
+      "icon": "TwitterIcon",
+      "title": "Twitter",
+      "href": "https://twitter.com/ethswarm"
+    },
+    {
+      "icon": "RedditIcon",
+      "title": "Reddit",
+      "href": "https://www.reddit.com/r/ethswarm/"
+    },
+    {
+      "icon": "YouTubeIcon",
+      "title": "YouTube",
+      "href": "https://www.youtube.com/channel/UCu6ywn9MTqdREuE6xuRkskA/"
+    }
+  ]
+}
