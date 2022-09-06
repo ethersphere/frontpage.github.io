@@ -30,3 +30,29 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
+
+      - name: Upload to Swarm
+        id: swarm-upload
+        uses: ethersphere/swarm-actions/upload-dir@latest
+        with:
+          bee-url: ${{ secrets.BEE_URL }}
+          dir: ./out
+          index-document: index.html
+          timeout: 60000
+          deferred: false
+          headers: |
+            authorization: ${{ secrets.API_TOKEN }}
+      - name: Update feed
+        id: swarm-feed
+        uses: ethersphere/swarm-actions/write-feed@latest
+        with:
+          bee-url: ${{ secrets.BEE_URL }}
+          reference: ${{ steps.swarm-upload.outputs.reference }}
+          topic: swarm-homepage
+          signer: ${{ secrets.SIGNER }}
+      - name: Print references
+        run: |
+          echo "Upload ref: " ${{ steps.swarm-upload.outputs.reference }}
+          echo "Feed ref: " ${{ steps.swarm-feed.outputs.reference }}
+          echo "CID: " ${{ steps.swarm-cid.outputs.cid }}
+          echo "Feed Manifest: " ${{ steps.swarm-feed.outputs.manifest }}
