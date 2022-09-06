@@ -30,7 +30,7 @@ const ContentContainer: React.FC<ContentContainerProps> = ({
   image,
 }) => {
   return (
-    <Container className="w-full">
+    <Container className="relative z-10 w-full">
       <div
         className={cx(
           "grid",
