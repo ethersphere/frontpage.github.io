@@ -38,6 +38,7 @@ jobs:
           bee-url: ${{ secrets.BEE_URL }}
           dir: ./out
           index-document: index.html
+          postage-batch-id: ${{ secrets.POSTAGE_BATCH_ID }}
           timeout: 60000
           deferred: false
           headers: |
@@ -49,6 +50,7 @@ jobs:
           bee-url: ${{ secrets.BEE_URL }}
           reference: ${{ steps.swarm-upload.outputs.reference }}
           topic: swarm-homepage
+          postage-batch-id: ${{ secrets.POSTAGE_BATCH_ID }}
           signer: ${{ secrets.SIGNER }}
           headers: |
             authorization: ${{ secrets.API_TOKEN }}
