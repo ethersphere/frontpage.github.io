@@ -50,6 +50,8 @@ jobs:
           reference: ${{ steps.swarm-upload.outputs.reference }}
           topic: swarm-homepage
           signer: ${{ secrets.SIGNER }}
+          headers: |
+            authorization: ${{ secrets.API_TOKEN }}
       - name: Print references
         run: |
           echo "Upload ref: " ${{ steps.swarm-upload.outputs.reference }}
