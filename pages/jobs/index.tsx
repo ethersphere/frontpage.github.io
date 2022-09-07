@@ -26,9 +26,7 @@ const Jobs: NextPage = () => {
 
   return (
     <div className="bg-gray-100">
-      <Head>
-        <Meta title={content.meta.title ?? meta.title} />
-      </Head>
+      <Meta title={content.meta.title ?? meta.title} />
 
       <main>
         <Banner />

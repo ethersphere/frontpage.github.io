@@ -58,7 +58,7 @@
       },
       {
         "title": "No downtime",
-        "content": "Swarm is decentralized and distributed, and so it’s also always up, making it stable and reliable.",
+        "content": "Swarm is decentralised and distributed, and so it’s also always up, making it stable and reliable.",
         "icon": "DowntimeIcon"
       },
       {
@@ -81,7 +81,7 @@
   "wikipedia": {
     "titleSuffix": "on Swarm",
     "tagline": "In the spotlight",
-    "content": "<p>Swarm powers a decentralized and unstoppable mirror of Wikipedia, making access to knowledge universal.</p>",
+    "content": "<p>Swarm powers a decentralised and unstoppable mirror of Wikipedia, making access to knowledge universal.</p>",
     "ctas": [
       {
         "href": "https://gitcoin.co/issue/28926",

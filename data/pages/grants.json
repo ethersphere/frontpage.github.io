@@ -81,7 +81,7 @@
                 },
                 {
                   "title": "GetLoginEth",
-                  "content": "<p>GetLoginEth is a Dapp for providing a decentralized single sign-on solution for Ethereum-based social applications.</p>",
+                  "content": "<p>GetLoginEth is a Dapp for providing a decentralised single sign-on solution for Ethereum-based social applications.</p>",
                   "cta": {
                     "title": "More",
                     "href": "/",

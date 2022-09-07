@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import {
   Dapp,
   DevelopSection,
@@ -23,9 +22,7 @@ import { Meta } from "@/components/common";
 const Home: NextPage = () => {
   return (
     <div className="bg-gray-100">
-      <Head>
-        <Meta title={meta.title} />
-      </Head>
+      <Meta title={meta.title} />
 
       <main className="">
         <Banner />

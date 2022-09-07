@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 
 import meta from "../../data/meta.json";
 
@@ -8,7 +9,7 @@ type MetaType = {
 
 const Meta: React.FC<MetaType> = ({ title }) => {
   return (
-    <>
+    <Head>
       <title>{`${title}${meta.titleSuffix}`}</title>
       <meta name="description" content={meta.description} />
       <link rel="icon" href="/favicon.png" />
@@ -28,7 +29,7 @@ const Meta: React.FC<MetaType> = ({ title }) => {
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={meta.social.description} />
       <meta property="twitter:image" content={meta.social.image} />
-    </>
+    </Head>
   );
 };
 

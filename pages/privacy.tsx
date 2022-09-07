@@ -8,9 +8,7 @@ import { Container, Meta, SectionContent } from "@/components/common";
 const Privacy: NextPage = () => {
   return (
     <div className="bg-gray-100">
-      <Head>
-        <Meta title={`Privacy policy`} />
-      </Head>
+      <Meta title={`Privacy policy`} />
 
       <main className="">
         <Banner />
