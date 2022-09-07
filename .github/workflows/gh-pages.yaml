@@ -31,32 +31,35 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
 
-      # - name: Upload to Swarm
-      #   id: swarm-upload
-      #   uses: ethersphere/swarm-actions/upload-dir@latest
-      #   with:
-      #     bee-url: ${{ secrets.BEE_URL }}
-      #     dir: ./out
-      #     index-document: index.html
-      #     postage-batch-id: ${{ secrets.POSTAGE_BATCH_ID }}
-      #     timeout: 60000
-      #     deferred: false
-      #     headers: |
-      #       authorization: ${{ secrets.API_TOKEN }}
-      # - name: Update feed
-      #   id: swarm-feed
-      #   uses: ethersphere/swarm-actions/write-feed@latest
-      #   with:
-      #     bee-url: ${{ secrets.BEE_URL }}
-      #     reference: ${{ steps.swarm-upload.outputs.reference }}
-      #     topic: swarm-homepage
-      #     postage-batch-id: ${{ secrets.POSTAGE_BATCH_ID }}
-      #     signer: ${{ secrets.SIGNER }}
-      #     headers: |
-      #       authorization: ${{ secrets.API_TOKEN }}
-      # - name: Print references
-      #   run: |
-      #     echo "Upload ref: " ${{ steps.swarm-upload.outputs.reference }}
-      #     echo "Feed ref: " ${{ steps.swarm-feed.outputs.reference }}
-      #     echo "CID: " ${{ steps.swarm-cid.outputs.cid }}
-      #     echo "Feed Manifest: " ${{ steps.swarm-feed.outputs.manifest }}
+      - name: Upload to Swarm
+        uses: ethersphere/swarm-actions/upload-dir@v0
+        id: upload
+        with:
+          dir: ./out
+          index-document: index.html
+          postage-batch-id: ${{ secrets.POSTAGE_BATCH_ID }}
+          bee-url: ${{ secrets.BEE_URL }}
+          timeout: 300000
+          headers: |
+            authorization: ${{ secrets.API_TOKEN }}
+      - name: Setup feed
+        uses: ethersphere/swarm-actions/write-feed@v0
+        id: feed
+        with:
+          reference: ${{ steps.upload.outputs.reference }}
+          topic: "swarm-homepage"
+          postage-batch-id: ${{ secrets.POSTAGE_BATCH_ID }}
+          bee-url: ${{ secrets.BEE_URL }}
+          signer: ${{ secrets.SIGNER }}
+          headers: |
+            authorization: ${{ secrets.API_TOKEN }}
+      - uses: ethersphere/swarm-actions/reference-to-cid@v0
+        id: cid
+        with:
+          reference: ${{ steps.feed.outputs.manifest }}
+
+      - run: |
+          echo 'Chunk Reference: ${{ steps.upload.outputs.reference }}'
+          echo 'Feed Reference: ${{ steps.feed.outputs.reference }}'
+          echo 'Feed Manifest: ${{ steps.feed.outputs.manifest }}'
+          echo 'Feed Bzz.link: https://${{ steps.cid.outputs.cid }}.bzz.link'
