@@ -30,7 +30,7 @@ const Dapp: React.FC<DappProps> = ({ tagline, title, features, ctas }) => {
 
         <ButtonGroup ctas={ctas} className="mt-16 mb-4" />
 
-        <div className="grid grid-cols-1 mt-16 md:grid-cols-2">
+        {/* <div className="grid grid-cols-1 mt-16 md:grid-cols-2">
           <div className="">
             <h2 className="py-4 text-xl sm:text-2xl font-bold leading-[1.33]">
               Case study: Dracula markdown editor
@@ -50,8 +50,8 @@ const Dapp: React.FC<DappProps> = ({ tagline, title, features, ctas }) => {
               />
             </div>
           </div>
-          {/* <div className="bg-black aspect-video"></div> */}
-        </div>
+          <div className="bg-black aspect-video"></div>
+        </div> */}
       </Container>
     </section>
   );

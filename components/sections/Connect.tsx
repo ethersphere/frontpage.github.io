@@ -2,13 +2,7 @@ import * as React from "react";
 import { Container, Tagline } from "@/components/common";
 import { HeadingUnderline } from "@/components/common";
 import content from "../../data/connect.json";
-import {
-  DiscordIcon,
-  GitHubIcon,
-  RedditIcon,
-  TwitterIcon,
-  YouTubeIcon,
-} from "@/icons/index";
+import Icons from "@/icons/components/index";
 
 type ConnectProps = {};
 
@@ -138,11 +132,11 @@ const CommunityLink: React.FC<CommunityLinkProps> = ({
   icon = "DiscordIcon",
 }) => {
   const icons: any = {
-    DiscordIcon: DiscordIcon,
-    TwitterIcon: TwitterIcon,
-    GitHubIcon: GitHubIcon,
-    RedditIcon: RedditIcon,
-    YouTubeIcon: YouTubeIcon,
+    DiscordIcon: Icons.DiscordIcon,
+    TwitterIcon: Icons.TwitterIcon,
+    GitHubIcon: Icons.GitHubIcon,
+    RedditIcon: Icons.RedditIcon,
+    YouTubeIcon: Icons.YouTubeIcon,
   };
 
   const IconTag: any = icon ? icons[icon] : false;

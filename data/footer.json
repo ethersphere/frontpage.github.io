@@ -2,15 +2,19 @@
   "primary": [
     {
       "title": "Whitepaper",
-      "href": "https://www.ethswarm.org/swarm-whitepaper.pdf"
+      "href": "/swarm-whitepaper.pdf"
     },
     {
       "title": "Book of Swarm",
-      "href": "https://www.ethswarm.org/The-Book-of-Swarm.pdf"
+      "href": "/The-Book-of-Swarm.pdf"
     },
     {
       "title": "Foundation",
       "href": "/foundation"
+    },
+    {
+      "title": "Jobs",
+      "href": "/jobs"
     }
   ],
   "secondary": [
@@ -32,6 +36,10 @@
         {
           "title": "Awesome Swarm",
           "href": "https://github.com/ethersphere/awesome-swarm"
+        },
+        {
+          "title": "Swarm Gateway",
+          "href": "https://gateway.ethswarm.org/"
         }
       ]
     },

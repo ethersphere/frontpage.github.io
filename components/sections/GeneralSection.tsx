@@ -41,7 +41,10 @@ const GeneralSection: React.FC<GeneralSectionProps> = ({
         <Tagline copy={content.tagline} />
 
         <div className="mb-8 md:mb-12">
-          <HeadingUnderline title={content.title} />
+          <HeadingUnderline
+            title={content.title}
+            background={background === "bg-black" ? "orange-onDark" : "orange"}
+          />
         </div>
 
         <SectionContent className="mb-14" content={content.content} />

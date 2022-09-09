@@ -33,9 +33,13 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({
       {ctas.map((cta, index) => {
         const ButtonTag: any = buttonTypes[cta.type ?? "default"];
 
+        const buttonPadding =
+          cta.background === "transparent" && index !== 0 ? "px-4" : "pr-4";
+
         return (
           <ButtonTag
             key={index}
+            className={buttonPadding}
             background={cta.background as ButtonBackgroundType}
             color={cta.color as ButtonTextColorType}
             title={cta.title}

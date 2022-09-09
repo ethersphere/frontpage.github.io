@@ -6,11 +6,13 @@ import { cx } from "utils";
 type HeadingUnderlineProps = {
   title: string;
   type?: "default" | "small";
+  background?: "orange" | "orange-onDark";
 };
 
 const HeadingUnderline: React.FC<HeadingUnderlineProps> = ({
   title,
   type = "default",
+  background = "orange",
 }) => {
   const size: Size = useWindowSize();
 
@@ -29,8 +31,11 @@ const HeadingUnderline: React.FC<HeadingUnderlineProps> = ({
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: 0.3 }}
       className={cx(
-        "inline font-bold tracking-[-0.01em] heading-underline",
-        textSize
+        "inline font-bold tracking-[-0.01em] pr-2 md:pr-3",
+        textSize,
+        background === "orange"
+          ? "heading-underline"
+          : "heading-underline-onDark"
       )}
     >
       {title}

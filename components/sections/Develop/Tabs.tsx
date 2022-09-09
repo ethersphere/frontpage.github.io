@@ -39,7 +39,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs = [], className = "" }) => {
               <Tab.Panel key={index}>
                 <SectionContent className="pb-8" content={tab.content} />
 
-                <ButtonGroup className="-mx-4" ctas={tab.ctas} />
+                <ButtonGroup className="" ctas={tab.ctas} />
 
                 <CodeBlock className="mt-8 -mx-4" code={tab.code} />
               </Tab.Panel>

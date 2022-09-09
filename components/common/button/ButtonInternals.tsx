@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ArrowIcon } from "@/icons/index";
+import { ArrowIcon } from "@/icons/components/index";
 
 type ButtonInternalsProps = {
   title: string;

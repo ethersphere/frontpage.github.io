@@ -2,18 +2,6 @@ import * as React from "react";
 import { FeatureType } from "types";
 import { cx } from "utils";
 import Button from "./Button";
-import {
-  DdosIcon,
-  DowntimeIcon,
-  FaultIcon,
-  PrivacyIcon,
-  CredibleIcon,
-  OpenIcon,
-  GrowIcon,
-  ForkIcon,
-  ConnectIcon,
-  UploadIcon,
-} from "@/icons/index";
 import Icons from "@/icons/components/index";
 
 const Feature: React.FC<FeatureType> = ({
@@ -29,15 +17,15 @@ const Feature: React.FC<FeatureType> = ({
 
   const icons: any = {
     OpenIcon: Icons.OpenIcon,
-    DdosIcon: DdosIcon,
-    PrivacyIcon: PrivacyIcon,
-    CredibleIcon: CredibleIcon,
-    DowntimeIcon: DowntimeIcon,
-    FaultIcon: FaultIcon,
-    GrowIcon: GrowIcon,
-    ConnectIcon: ConnectIcon,
+    DdosIcon: Icons.DdosIcon,
+    PrivacyIcon: Icons.PrivacyIcon,
+    CredibleIcon: Icons.CredibleIcon,
+    DowntimeIcon: Icons.DowntimeIcon,
+    FaultIcon: Icons.FaultIcon,
+    GrowIcon: Icons.GrowIcon,
+    ConnectIcon: Icons.ConnectIcon,
     Upload2Icon: Icons.Upload2Icon,
-    ForkIcon: ForkIcon,
+    ForkIcon: Icons.ForkIcon,
     PlusIcon: Icons.PlusIcon,
     UnlimitedIcon: Icons.UnlimitedIcon,
     LayersIcon: Icons.LayersIcon,
@@ -56,11 +44,6 @@ const Feature: React.FC<FeatureType> = ({
   };
 
   const IconTag: any = icon ? icons[icon] : false;
-
-  const imageClass =
-    type === "default"
-      ? "w-8 h-8 sm:h-10 sm:w-10"
-      : "w-10 h-10 sm:h-12 sm:w-12";
 
   return (
     <div className="flex flex-col">
@@ -82,13 +65,12 @@ const Feature: React.FC<FeatureType> = ({
       )}
       {IconTag !== false && (
         <div className="flex items-end flex-grow px-3 pt-1 sm:px-4 sm:pt-3">
-          <IconTag className="h-[38px]" />
-          {/* <img className={imageClass} src={image.src} alt={image.alt} /> */}
+          <IconTag className={type === "default" ? "h-[32px]" : "h-[40px]"} />
         </div>
       )}
 
       {cta && cta.href.length > 0 && (
-        <div className="">
+        <div className="px-3 sm:px-4">
           <Button
             href={cta.href}
             title={cta.title}

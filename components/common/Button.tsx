@@ -10,6 +10,7 @@ type ButtonProps = {
   href?: string;
   title?: string;
   arrow?: boolean;
+  className?: string;
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -18,19 +19,20 @@ const Button: React.FC<ButtonProps> = ({
   arrow = false,
   background = "orange",
   color = "black",
+  className = "",
 }) => {
   let classNameBackground =
-    "bg-orange-500 focus:outline-none hover:bg-orange-hover";
+    "bg-orange-500 focus:outline-none hover:bg-orange-hover px-4";
 
   if (background === "transparent") {
     classNameBackground = "bg-orange-transparent focus:outline-none";
   } else if (background === "white") {
-    classNameBackground = "bg-white focus:ring-white";
+    classNameBackground = "bg-white focus:ring-white px-4";
   } else if (background === "black") {
-    classNameBackground = "bg-black focus:outline-none";
+    classNameBackground = "bg-black focus:outline-none px-4";
   } else if (background === "orange-onDark") {
     classNameBackground =
-      "bg-orange-onDark focus:outline-none hover:bg-orange-hover";
+      "bg-orange-onDark focus:outline-none hover:bg-orange-hover px-4";
   }
 
   let classNameColor = "text-black";
@@ -39,16 +41,22 @@ const Button: React.FC<ButtonProps> = ({
     classNameColor = "text-gray-100";
   }
 
-  const className = cx(
-    "transition duration-200 uppercase inline-flex justify-center items-center text-lg font-semibold tracking-wider px-4 py-2 font-display gap-2 group focus:outline-none",
+  const classNameButton = cx(
+    "transition duration-200 uppercase inline-flex justify-center items-center text-lg font-semibold tracking-wider py-2 font-display gap-2 group focus:outline-none",
     classNameBackground,
-    classNameColor
+    classNameColor,
+    className
   );
 
   // If href starts with http, we use anchor html tag, otherwise we use next/link
   if (href.startsWith("http")) {
     return (
-      <a href={href} target="_blank" rel="noreferrer" className={className}>
+      <a
+        href={href}
+        target="_blank"
+        rel="noreferrer"
+        className={classNameButton}
+      >
         <ButtonInternals title={title} arrow={arrow} />
       </a>
     );
@@ -56,7 +64,7 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <Link href={href}>
-      <a className={className}>
+      <a className={classNameButton}>
         <ButtonInternals title={title} arrow={arrow} />
       </a>
     </Link>

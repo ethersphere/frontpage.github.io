@@ -6,7 +6,7 @@ import { Transition } from "@headlessui/react";
 import { Container, RegularLink } from "@/components/common";
 import Logo from "./Logo";
 import { cx } from "utils";
-import ArrowIcon from "@/icons/ArrowIcon";
+import { ArrowIcon } from "@/icons/components/index";
 
 import navigation from "../data/nav/main.json";
 
@@ -66,13 +66,16 @@ const Navigation: React.FC<NavigationProps> = ({
                 ))}
           </div>
 
-          {/* <div className="hidden text-lg antialiased font-bold leading-10 tracking-wider uppercase font-display lg:flex">
+          <div className="hidden text-lg antialiased font-bold leading-10 tracking-wider uppercase font-display lg:flex">
             {navigation.items.length > 1 && (
-              <MenuLink {...navigation.items[navigation.items.length - 1]} />
+              <MenuLink
+                {...navigation.items[navigation.items.length - 1]}
+                selected={router.asPath.startsWith(
+                  navigation.items[navigation.items.length - 1].href
+                )}
+              />
             )}
-          </div> */}
-
-          <div></div>
+          </div>
 
           <div className="flex items-center lg:hidden">
             <HamburgerButton onClick={() => setIsOpen(true)} />
@@ -121,36 +124,34 @@ const Navigation: React.FC<NavigationProps> = ({
 
               <nav className="grid divide-y divide-gray-500">
                 {navigation.items.length > 0 &&
-                  navigation.items
-                    .slice(0, navigation.items.length - 1)
-                    .map((link, index) => (
-                      <div key={index} className="px-6 py-3">
-                        <RegularLink
-                          onClick={() => setIsOpen(false)}
-                          href={link.href}
-                          className="flex items-center px-3 py-4 text-base font-medium tracking-wider text-gray-100 uppercase rounded-md font-display hover:bg-gray-700"
-                        >
-                          {link.title}
-                        </RegularLink>
-                        {router.asPath.startsWith(link.href) &&
-                          link.children &&
-                          link.children.length > 0 && (
-                            <div className="px-4 py-3 space-y-4">
-                              {link.children.map((child, index) => (
-                                <RegularLink
-                                  key={index}
-                                  onClick={() => setIsOpen(false)}
-                                  href={child.href}
-                                  className="flex items-center px-3 py-4 text-base font-medium tracking-wider text-gray-100 uppercase rounded-md font-display hover:bg-gray-700"
-                                >
-                                  <span>{child.title}</span>
-                                  <ArrowIcon className="ml-2.5 w-4 h-4 text-gray-100" />
-                                </RegularLink>
-                              ))}
-                            </div>
-                          )}
-                      </div>
-                    ))}
+                  navigation.items.map((link, index) => (
+                    <div key={index} className="px-6 py-3">
+                      <RegularLink
+                        onClick={() => setIsOpen(false)}
+                        href={link.href}
+                        className="flex items-center px-3 py-4 text-base font-medium tracking-wider text-gray-100 uppercase rounded-md font-display hover:bg-gray-700"
+                      >
+                        {link.title}
+                      </RegularLink>
+                      {router.asPath.startsWith(link.href) &&
+                        link.children &&
+                        link.children.length > 0 && (
+                          <div className="px-4 py-3 space-y-4">
+                            {link.children.map((child, index) => (
+                              <RegularLink
+                                key={index}
+                                onClick={() => setIsOpen(false)}
+                                href={child.href}
+                                className="flex items-center px-3 py-4 text-base font-medium tracking-wider text-gray-100 uppercase rounded-md font-display hover:bg-gray-700"
+                              >
+                                <span>{child.title}</span>
+                                <ArrowIcon className="ml-2.5 w-4 h-4 text-gray-100" />
+                              </RegularLink>
+                            ))}
+                          </div>
+                        )}
+                    </div>
+                  ))}
               </nav>
             </div>
           </div>

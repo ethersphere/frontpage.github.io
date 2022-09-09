@@ -7,7 +7,7 @@ import {
 } from "@/components/common";
 import { CtaType, ImageType } from "types";
 import Quote from "./Hero/Quote";
-import ArrowIcon from "@/icons/ArrowIcon";
+import { ArrowIcon } from "@/icons/components/index";
 
 type HeroProps = {
   title: string;

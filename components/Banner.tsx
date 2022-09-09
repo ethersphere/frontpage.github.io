@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { SearchInput, Semaphore } from "@/components/Banner/index";
-import { StatsIcon } from "@/icons/index";
+import { StatsIcon } from "@/icons/components/index";
 import { RegularLink } from "@/components/common";
 import content from "../data/banner.json";
 

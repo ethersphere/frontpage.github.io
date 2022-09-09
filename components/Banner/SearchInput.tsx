@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SearchIcon } from "@/icons/index";
+import { SearchIcon } from "@/icons/components/index";
 import { InputField } from "../common";
 
 type SearchInputType = {

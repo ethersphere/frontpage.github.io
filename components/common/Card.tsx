@@ -66,7 +66,7 @@ const Card: React.FC<CardProps> = ({
         </div>
       </RegularLink>
       {cta && cta.href.length > 0 && (
-        <div className="-ml-4">
+        <div>
           <Button
             href={cta.href}
             title={cta.title}

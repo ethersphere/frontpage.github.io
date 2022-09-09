@@ -21,10 +21,16 @@
 }
 
 .heading-underline {
-  background-image: linear-gradient(
-    theme("colors.orange.onDark"),
-    theme("colors.orange.500")
-  );
+  background-image: linear-gradient(#ff8a00, #ff8a00);
+  background-size: 100% 16px;
+  background-repeat: no-repeat;
+  background-position: left 90%;
+
+  text-decoration: none;
+}
+
+.heading-underline-onDark {
+  background-image: linear-gradient(#ff7a00, #ff7a00);
   background-size: 100% 16px;
   background-repeat: no-repeat;
   background-position: left 90%;

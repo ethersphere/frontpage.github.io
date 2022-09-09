@@ -112,7 +112,7 @@
         "title": "Swarm stack"
       },
       {
-        "href": "https://desktop.ethswarm.org",
+        "href": "http://localhost:3000/build/desktop",
         "background": "transparent",
         "color": "black",
         "arrow": true,
@@ -278,7 +278,7 @@
       "ctas": [
         {
           "href": "https://medium.com/ethereum-swarm",
-          "background": "orange",
+          "background": "orange-onDark",
           "color": "black",
           "arrow": true,
           "title": "Visit Blog"
@@ -288,7 +288,7 @@
   },
   "builders": {
     "tagline": "One Swarm, united in PLUR, guided by virtue",
-    "title": "Builders on Swarm",
+    "title": "Build on Swarm",
     "content": "<p>Swarm grants and online events support many interesting projects that are already building their products on top of Swarm.</p>",
     "features": [
       {
@@ -296,7 +296,7 @@
         "content": "Etherna is a transparent video platform FOR EVERYONE where freedom of speech is incentivized, not convicted.",
         "cta": {
           "href": "https://etherna.io/",
-          "title": "Link"
+          "title": "More"
         }
       },
       {
@@ -304,7 +304,7 @@
         "content": "Dapplets aims to leverage target websites’ search results to pull data previously uploaded to Swarm, providing an interface for data interchange between the Dapplet and the search result provider.",
         "cta": {
           "href": "https://dapplets.org/",
-          "title": "Link"
+          "title": "More"
         }
       },
       {
@@ -312,7 +312,7 @@
         "content": "Copyright Delta is building the Digital Rights Exchange & Network (DRX) which allows users to control their data and decide who has access to it. DRX also enables tokenised management of royalties, licensing and ownership.",
         "cta": {
           "href": "https://www.copyrightdelta.com/",
-          "title": "Link"
+          "title": "More"
         }
       },
       {
@@ -320,7 +320,7 @@
         "content": "SocialArchive will allow users to store their own data, giving them sovereignty to keep it from and/or integrate it with other services if they wish to do so.",
         "cta": {
           "href": "https://github.com/codiak/socialarchive-dapp",
-          "title": "Link"
+          "title": "More"
         }
       }
     ],
@@ -343,7 +343,7 @@
   },
   "millions": {
     "tagline": "BUILDING A BRIGHTER, UNSTOPPABLE WEBZ",
-    "title": "Builders on Swarm",
+    "title": "Build on Swarm",
     "content": "<p>Imagine a society where human rights are respected and your data is not used against you to influence what you think.</p><p>Explore the power of art, blockchain, and games and help create a fair, ethical, private, censorship-free, permissionless and unstoppable Web3. Join other like-minded artists, gamers, developers, activists, and crypto-enthusiasts, as well as curious and knowledgeable souls.</p>",
     "starts_in": {
       "label": "Starts in:",
