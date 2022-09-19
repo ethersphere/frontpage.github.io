@@ -19,7 +19,7 @@ type DappProps = {
 const Dapp: React.FC<DappProps> = ({ tagline, title, features, ctas }) => {
   return (
     <section className="relative flex justify-center overflow-hidden text-black">
-      <Container className="flex flex-col pt-24 pb-16 md:pb-44 md:pt-40">
+      <Container className="flex flex-col py-20 md:py-40">
         <Tagline copy={tagline} />
 
         <div className="mb-8 md:mb-16 md:w-1/2">

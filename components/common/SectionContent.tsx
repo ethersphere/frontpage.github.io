@@ -19,9 +19,9 @@ const SectionContent: React.FC<SectionContentProps> = ({
   return (
     <div
       className={cx(
-        "prose leading-[26px] md:prose-lg",
+        "prose prose-sm leading-[20px] md:leading-[26px] md:prose-lg",
         className,
-        fullWidth ? "w-full" : "max-w-xl"
+        fullWidth ? "w-full max-w-none" : "max-w-xl"
       )}
       style={{ orphans: 6 }}
       dangerouslySetInnerHTML={{

@@ -23,11 +23,12 @@
               "title": "All milestones",
               "href": "/roadmap#milestones",
               "arrow": true,
+              "back": true,
               "background": "transparent"
             }
           ]
         },
-        "content": "<h2>Host unstoppable content on Swarm</h2><p>Uploading and downloading content such as websites or nft-data is optimised and predictable. This functionality can be accessed through all Swarm products:</p><ul><li>bee</li><li>gateway</li><li>swarm-cli</li><li>chrome extension</li><li>dashboard</li><li>bee-js</li></ul><p></p><ol><li><h3>Measuring success</h3><ul><li>Small data and dapps (~5MB) can be uploaded and downloaded reliably</li><li>Websites can be accessed by means of a human-readable name without the need for completing a blockchain transaction for every update</li></ul></li><li><h3>Completed</h3><p>Q4 2021</p></li><li><h3>Value</h3><p>With this goal achieved, Swarm further unlocks the following features:</p><ul><li>Permissionless upload and download</li><li>Robust defences against blocking or changing access to content once published</li><li>Auto-scaling with increased demand</li><li>Integrity protected content</li><li>Eventually forgetting content that is no longer relevant to preserve</li></ul><p></p></li></ol>"
+        "content": "<h2>Host unstoppable content on Swarm</h2><p>Uploading and downloading content such as websites or nft-data is optimised and predictable. This functionality can be accessed through all Swarm products:</p><ul><li>bee</li><li>gateway</li><li>swarm-cli</li><li>chrome extension</li><li>dashboard</li><li>bee-js</li></ul><p></p><h2>Measuring success</h2><ul><li>Small data and dapps (~5MB) can be uploaded and downloaded reliably</li><li>Websites can be accessed by means of a human-readable name without the need for completing a blockchain transaction for every update</li></ul><h2>Completed</h2><p>Q4 2021</p><h2>Value</h2><p>With this goal achieved, Swarm further unlocks the following features:</p><ul><li>Permissionless upload and download</li><li>Robust defences against blocking or changing access to content once published</li><li>Auto-scaling with increased demand</li><li>Integrity protected content</li><li>Eventually forgetting content that is no longer relevant to preserve</li></ul><p></p>"
       }
     }
   ]

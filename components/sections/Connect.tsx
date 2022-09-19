@@ -9,7 +9,7 @@ type ConnectProps = {};
 const Connect: React.FC<ConnectProps> = () => {
   return (
     <section className="relative flex justify-center overflow-hidden text-black bg-gray-300">
-      <Container className="flex flex-col pt-24 pb-16 md:pb-44 md:pt-40">
+      <Container className="flex flex-col py-20 md:py-40">
         <Tagline copy={content.tagline} />
 
         <div className="mb-8 md:mb-12">
@@ -18,7 +18,7 @@ const Connect: React.FC<ConnectProps> = () => {
 
         <div className="grid gap-8 sm:grid-cols-2">
           <div className="">
-            <h3 className="pl-4 mb-8 -ml-4 text-xl font-bold border-l border-black md:text-2xl">
+            <h3 className="pl-2 mb-8 -ml-2 text-xl font-bold border-l border-black sm:-ml-4 sm:pl-4 md:text-2xl">
               {content.events_title}
             </h3>
             <div className="space-y-4">
@@ -34,7 +34,7 @@ const Connect: React.FC<ConnectProps> = () => {
           </div>
 
           <div className="">
-            <h3 className="pl-4 mb-8 -ml-4 text-xl font-bold border-l border-black md:text-2xl">
+            <h3 className="pl-2 mb-8 -ml-2 text-xl font-bold border-l border-black sm:pl-4 sm:-ml-4 md:text-2xl">
               {content.community_title}
             </h3>
             <div className="space-y-4">

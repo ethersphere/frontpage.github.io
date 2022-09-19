@@ -14,7 +14,7 @@ const Jobs: NextPage = ({ jobs }: any) => {
     <div className="bg-gray-100">
       <Meta title={content.meta.title ?? meta.title} />
 
-      <main>
+      <main className="overflow-hidden">
         <Banner />
 
         <Navigation textColor="text-gray-700" />

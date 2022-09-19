@@ -49,7 +49,7 @@ const ContentContainer: React.FC<ContentContainerProps> = ({
           </div>
           <SectionContent
             className={cx(
-              "mt-8",
+              "mt-12",
               contentWidth === "half" ? "" : "md:columns-2 max-w-none md:gap-16"
             )}
             fullWidth={contentWidth === "full"}
@@ -69,9 +69,9 @@ const ContentContainer: React.FC<ContentContainerProps> = ({
           )}
 
           {/* @ts-ignore */}
-          <FeatureList className="mt-16" {...features} />
+          <FeatureList className="mt-16 mb-2" {...features} />
 
-          <ButtonGroup className="mt-10" ctas={ctas} />
+          <ButtonGroup className="mt-16" ctas={ctas} />
         </div>
 
         <CodeBlock code={code} />

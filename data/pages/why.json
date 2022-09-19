@@ -9,7 +9,7 @@
         "hero": {
           "title": "World Wide Swarm",
           "id": "world",
-          "background": { "src": "/assets/why.png", "alt": "" },
+          "background": { "src": "/assets/hero/wws.png", "alt": "" },
           "content": "<p>Swarm exists to provide a decentralised infrastructure to transfer and store the world’s data.</p>",
           "ctas": [
             {

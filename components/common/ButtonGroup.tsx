@@ -43,6 +43,7 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({
             background={cta.background as ButtonBackgroundType}
             color={cta.color as ButtonTextColorType}
             title={cta.title}
+            back={cta.back}
             href={cta.href}
             arrow={cta.arrow}
           />

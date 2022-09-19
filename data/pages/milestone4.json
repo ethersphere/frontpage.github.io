@@ -23,11 +23,12 @@
               "title": "All milestones",
               "href": "/roadmap#milestones",
               "arrow": true,
+              "back": true,
               "background": "transparent"
             }
           ]
         },
-        "content": "<h2>Optimisation for larger data uploads</h2><p>Uploading and downloading bigger files and datasets is optimised.</p><ol><li><h3>Measuring success</h3><ul><li>Large data and data-sets (~2.4GB) can be up- and downloaded reliably</li><li>Have a good UX for uploading, pausing, resuming, monitoring and postage stamp payment</li></ul></li><li><h3>Time Estimate</h3><p>To be confirmed</p></li><li><h3>Value</h3><ul><li>The benefits of Milestone #1 are now unlocked for bigger files</li><li>Use-cases are increased</li><li>Usability of the network is greatly improved</li></ul></li></ol>"
+        "content": "<h2>Optimisation for larger data uploads</h2><p>Uploading and downloading bigger files and datasets is optimised.</p><h2>Measuring success</h2><ul><li>Large data and data-sets (~2.4GB) can be up- and downloaded reliably</li><li>Have a good UX for uploading, pausing, resuming, monitoring and postage stamp payment</li></ul></li><h2>Time Estimate</h2><p>To be confirmed</p><h2>Value</h2><ul><li>The benefits of Milestone #1 are now unlocked for bigger files</li><li>Use-cases are increased</li><li>Usability of the network is greatly improved</li></ul>"
       }
     }
   ]

@@ -26,7 +26,7 @@ const DevelopSection: React.FC<DevelopSectionProps> = ({
 }) => {
   return (
     <section className="relative flex justify-center overflow-hidden text-black">
-      <Container className="grid grid-cols-1 pt-24 pb-16 md:pb-44 md:pt-40 lg:grid-cols-2 gap-x-12 gap-y-16">
+      <Container className="grid grid-cols-1 py-20 md:py-40 lg:grid-cols-2 gap-x-12 gap-y-16">
         <div className="flex flex-col">
           <Tagline copy={tagline} />
 

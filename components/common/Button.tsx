@@ -10,6 +10,7 @@ type ButtonProps = {
   href?: string;
   title?: string;
   arrow?: boolean;
+  back?: boolean;
   className?: string;
 };
 
@@ -20,6 +21,7 @@ const Button: React.FC<ButtonProps> = ({
   background = "orange",
   color = "black",
   className = "",
+  back = false,
 }) => {
   let classNameBackground =
     "bg-orange-500 focus:outline-none hover:bg-orange-hover px-4";
@@ -57,7 +59,7 @@ const Button: React.FC<ButtonProps> = ({
         rel="noreferrer"
         className={classNameButton}
       >
-        <ButtonInternals title={title} arrow={arrow} />
+        <ButtonInternals title={title} arrow={arrow} back={back} />
       </a>
     );
   }
@@ -65,7 +67,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <Link href={href}>
       <a className={classNameButton}>
-        <ButtonInternals title={title} arrow={arrow} />
+        <ButtonInternals title={title} arrow={arrow} back={back} />
       </a>
     </Link>
   );

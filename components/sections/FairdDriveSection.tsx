@@ -29,7 +29,7 @@ const FairdDriveSection: React.FC<FairdDriveSectionProps> = ({
         alt="FairDataSociety Graphic"
         className="absolute bottom-0 right-0 z-0 hidden pointer-events-none lg:block md:top-0 md:h-full h-1/2"
       />
-      <Container className="relative z-10 flex flex-col pt-24 pb-16 md:pb-44 md:pt-40">
+      <Container className="relative z-10 flex flex-col py-20 md:py-40">
         <Tagline copy={tagline} />
 
         <div className="mb-8 md:mb-12">
@@ -42,9 +42,10 @@ const FairdDriveSection: React.FC<FairdDriveSectionProps> = ({
 
         <ButtonGroup ctas={ctas} className="mb-12 sm:mb-16 mt-14" />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:w-1/2 gap-y-8 sm:gap-y-0">
+        <div className="grid grid-cols-1 -ml-2 sm:m-l0 sm:grid-cols-2 lg:w-1/2 gap-y-8 sm:gap-y-0">
           <Feature
             title="fairOS"
+            copyClass="text-gray-100"
             content={`→ filesystem on Swarm<br />→ key-value store<br />→ db doc<br />→ works in browser (WASM)`}
             cta={{
               title: "Documentation",
@@ -54,6 +55,7 @@ const FairdDriveSection: React.FC<FairdDriveSectionProps> = ({
           />
           <Feature
             title="fairDRIVE"
+            copyClass="text-gray-100"
             content={`→ data wallet for end users<br />→ customise easily (white label)<br />→ GDPR support<br />→ fast development`}
             cta={{
               title: "Try Fairdrive",

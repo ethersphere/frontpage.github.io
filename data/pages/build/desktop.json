@@ -10,9 +10,9 @@
           "title": "Swarm Desktop",
           "id": "desktop",
           "background": {
-            "src": "/assets/desktop.png",
+            "src": "/assets/hero/desktop.png",
             "alt": "",
-            "class": "left-0 right-0 md:left-16 2xl:left-0 top-32 bottom-0"
+            "position": "container"
           },
           "content": "<p>Swarm Desktop (Beta) offers decentralised access to the Swarm network and an easy-to-use experience.</p>",
           "ctas": [

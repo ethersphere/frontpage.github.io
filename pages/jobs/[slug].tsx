@@ -37,6 +37,7 @@ const JobSingle: NextPage = (content: any) => {
                 {
                   title: "All Jobs",
                   href: "/jobs",
+                  back: true,
                   arrow: true,
                   background: "transparent",
                 },

@@ -55,7 +55,11 @@ const DownloadButton: React.FC<ButtonProps> = ({
       rel="noreferrer"
       className={className}
     >
-      <ButtonInternals title={`Download for ${asset.osName}`} arrow={arrow} />
+      <ButtonInternals
+        title={`Download for ${asset.osName}`}
+        arrow={arrow}
+        back={false}
+      />
     </a>
   );
 };

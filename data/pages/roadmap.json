@@ -9,7 +9,7 @@
         "hero": {
           "title": "Roadmap",
           "id": "roadmap",
-          "background": { "src": "/assets/roadmap.png", "alt": "" },
+          "background": { "src": "/assets/hero/roadmap.png", "alt": "" },
           "content": "<p>What’s next for Swarm?</p>"
         }
       }
@@ -85,6 +85,7 @@
       "data": {
         "hero": {
           "title": "Milestones",
+          "background": { "src": "/assets/hero/roadmap.png", "alt": "" },
           "id": "milestones"
         },
         "items": [

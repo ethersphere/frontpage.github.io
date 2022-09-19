@@ -15,6 +15,7 @@ export type CtaType = {
   color?: ButtonTextColorType;
   arrow?: boolean;
   type?: "default" | "download";
+  back?: boolean;
 };
 
 export type LinkType = {
@@ -27,6 +28,7 @@ export type ImageType = {
   alt: string;
   class?: string;
   lazy?: boolean;
+  position?: string;
 };
 
 export type FeatureListType = {
@@ -34,6 +36,7 @@ export type FeatureListType = {
   className?: string;
   columns?: "six" | "four" | "three" | "two";
   type?: "default" | "large";
+  spacing?: "default" | "wide";
 };
 
 export type FeatureType = {
@@ -42,6 +45,7 @@ export type FeatureType = {
   icon?: string;
   cta?: CtaType;
   type?: "default" | "large";
+  copyClass?: string;
 };
 
 export type TabType = {

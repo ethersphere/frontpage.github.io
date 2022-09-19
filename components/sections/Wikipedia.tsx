@@ -28,7 +28,7 @@ const Wikipedia: React.FC<WikipediaProps> = ({
         alt="Wikipedia Graphic"
         className="absolute bottom-0 right-0 hidden pointer-events-none md:block md:top-0 md:h-full h-1/2"
       />
-      <Container className="flex flex-col h-full pt-24 pb-16 md:pb-44 md:pt-40">
+      <Container className="flex flex-col h-full pt-20 pb-16 md:pb-44 md:pt-40">
         <Tagline copy={tagline} />
 
         <div className="mb-8 md:mb-12">

@@ -23,6 +23,10 @@ const HeadingUnderline: React.FC<HeadingUnderlineProps> = ({
       ? "text-4xl md:text-[64px] md:leading-[70px]"
       : "text-[38px] leading-[50px]";
 
+  if (!title || (title && title.length === 0)) {
+    return null;
+  }
+
   return (
     <motion.h2
       whileInView={{

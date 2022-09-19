@@ -8,8 +8,8 @@ type FooterProps = {};
 const Footer: React.FC<FooterProps> = () => {
   return (
     <section className="relative flex flex-col items-center overflow-hidden text-gray-100 bg-gray-800">
-      <div className="flex flex-wrap justify-center w-full max-w-6xl pt-4 sm:pt-12 2xl:max-w-7xl">
-        <div className="grid w-full grid-cols-2 gap-8 px-6 py-16 md:grid-cols-4 lg:grid-cols-6 lg:py-32 xl:px-4">
+      <div className="flex flex-wrap justify-center w-full max-w-6xl pt-0 sm:pt-12 2xl:max-w-7xl">
+        <div className="grid w-full grid-cols-2 gap-8 px-6 py-20 md:grid-cols-4 lg:grid-cols-6 lg:py-32 xl:px-4">
           <div className="lg:col-span-3">
             <img
               loading="lazy"
@@ -29,7 +29,7 @@ const Footer: React.FC<FooterProps> = () => {
           </div>
           {content.secondary.map((section, index) => (
             <div key={index}>
-              <h3 className="pl-4 mb-4 -ml-4 font-bold uppercase border-l border-gray-100 sm:mb-8 sm:text-lg font-display">
+              <h3 className="pl-2 mb-4 -ml-2 font-bold uppercase border-l border-gray-100 sm:pl-4 sm:-ml-4 sm:mb-8 sm:text-lg font-display">
                 {section.title}
               </h3>
               <ul className="space-y-3 text-sm sm:mt-8 md:text-base lg:space-y-4 lg:text-lg font-display">

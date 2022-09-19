@@ -1,6 +1,7 @@
 import React from "react";
 import SecondaryHero from "./SecondaryHero";
 import ContentContainer from "./ContentContainer";
+import { cx } from "utils";
 
 type SectionProps = {
   index: number;
@@ -10,7 +11,7 @@ type SectionProps = {
 
 const Section: React.FC<SectionProps> = ({ index, hero, items = [] }) => {
   return (
-    <section className="pb-40 md:overflow-hidden">
+    <section className="pb-20 md:pb-40 md:overflow-hidden">
       {hero ? <SecondaryHero index={index} {...hero} /> : ""}
 
       {items && items.length > 0 && (

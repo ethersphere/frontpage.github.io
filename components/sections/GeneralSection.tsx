@@ -47,7 +47,7 @@ const GeneralSection: React.FC<GeneralSectionProps> = ({
           />
         </div>
 
-        <SectionContent className="mb-14" content={content.content} />
+        <SectionContent className="mb-[72px]" content={content.content} />
 
         <FeatureList
           features={content.features ?? []}
@@ -56,7 +56,7 @@ const GeneralSection: React.FC<GeneralSectionProps> = ({
 
         <CardList items={content.news ?? []} />
 
-        <ButtonGroup ctas={content.ctas} className="mt-16 mb-4" />
+        <ButtonGroup ctas={content.ctas} className="mt-20 mb-4" />
       </Container>
     </section>
   );

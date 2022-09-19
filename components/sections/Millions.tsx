@@ -70,7 +70,7 @@ const Millions: React.FC<MillionsProps> = ({
 
       {/* <div className="absolute inset-0 w-full h-full pointer-events-none bg-millions-gradient mask" /> */}
 
-      <Container className="z-20 flex flex-col pt-24 pb-16 md:pb-44 md:pt-40">
+      <Container className="z-20 flex flex-col py-20 md:py-40">
         <Tagline copy={tagline} />
 
         <div className="mb-8 md:mb-14">

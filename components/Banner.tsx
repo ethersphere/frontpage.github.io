@@ -8,7 +8,7 @@ type BannerProps = {};
 
 const Banner: React.FC<BannerProps> = () => {
   const [nodes, setNodes] = useState("");
-  const [color, setColor] = useState<"orange" | "green" | "red">("orange");
+  const [color, setColor] = useState<"orange" | "green" | "red">("green"); // default to orange?
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -17,7 +17,11 @@ const Banner: React.FC<BannerProps> = () => {
       .then((res) => res.json())
       .then((data) => {
         setColor("green");
-        setNodes(`${data.count}${content.nodes}`);
+        if (!data || !data.count) {
+          setNodes("Network active");
+        } else {
+          setNodes(`${data.count}${content.nodes}`);
+        }
         setLoading(false);
       })
       .catch((err) => {
@@ -30,7 +34,7 @@ const Banner: React.FC<BannerProps> = () => {
 
   return (
     <div className="absolute top-0 left-0 right-0 z-20 hidden text-white bg-black lg:block">
-      <div className="py-4 px-4.5 flex items-center justify-between">
+      <div className="py-3 px-4.5 flex items-center justify-between">
         <div className="flex items-center text-xs font-semibold leading-none text-gray-300 gap-x-2">
           {color && <Semaphore color={color} />}
           {isLoading === true ? (

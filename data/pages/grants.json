@@ -9,7 +9,7 @@
         "hero": {
           "title": "Make an impact",
           "id": "impact",
-          "background": { "src": "/assets/grants.png", "alt": "" },
+          "background": { "src": "/assets/hero/impact.png", "alt": "" },
           "content": "<p>Swarm grants support many interesting projects that are already building their products on top of Swarm. Swarm bounties extend the ecosystem with tooling and infrastructure.</p>",
           "ctas": [
             {
@@ -38,6 +38,7 @@
             "content": "<p>Find a list of current grantees below. Yours could be next.</p>",
             "features": {
               "columns": "three",
+              "spacing": "wide",
               "features": [
                 {
                   "title": "Etherna",
