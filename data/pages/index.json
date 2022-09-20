@@ -112,7 +112,7 @@
         "title": "Swarm stack"
       },
       {
-        "href": "http://localhost:3000/build/desktop",
+        "href": "/build/desktop",
         "background": "transparent",
         "color": "black",
         "arrow": true,

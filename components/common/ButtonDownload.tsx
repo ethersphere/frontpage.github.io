@@ -43,7 +43,7 @@ const DownloadButton: React.FC<ButtonProps> = ({
   }
 
   const className = cx(
-    "transition duration-200 uppercase inline-flex justify-center items-center text-lg font-semibold tracking-wider px-4 py-2 font-display gap-2 group focus:outline-none",
+    "transition duration-200 uppercase inline-flex justify-center items-center text-lg font-semibold tracking-wider px-4 py-2 font-display gap-3 group focus:outline-none",
     classNameBackground,
     classNameColor
   );
