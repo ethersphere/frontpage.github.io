@@ -5,17 +5,32 @@
   "events": [
     {
       "title": "WAM Sessions, online, September 27",
-      "href": "https://discord.com/channels/888359049551310869/944944273810403398",
+      "href": "https://discord.gg/QE5RRkDY",
       "add_to_calendar": ""
     },
     {
       "title": "Monthly Ecosystem Call, September 29",
-      "href": "https://discord.com/channels/799027393297514537/816617743688007702",
+      "href": "https://discord.gg/rV3vDDWs?event=1019262585268342864",
+      "add_to_calendar": ""
+    },
+    {
+      "title": "Last Shot Conference, Prague, September 30 - October 2 ",
+      "href": "https://last-shot.hcpp.cz/",
       "add_to_calendar": ""
     },
     {
       "title": "Devcon, Bogota, Oct 11-14",
       "href": "https://devcon.org/",
+      "add_to_calendar": ""
+    },
+    {
+      "title": "World Ethical Data Forum, Oct 26-28",
+      "href": "https://worldethicaldataforum.org/",
+      "add_to_calendar": ""
+    },
+    {
+      "title": "Monthly Ecosystem Call, online, October 27",
+      "href": "",
       "add_to_calendar": ""
     }
   ],
