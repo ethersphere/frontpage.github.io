@@ -57,11 +57,13 @@ const Home: NextPage = () => {
           tabs={content.develop.tabs as Array<TabType>}
         />
 
-        <FairdDriveSection
-          tagline={content.fairdata.tagline}
-          title={content.fairdata.title}
-          content={content.fairdata.content}
-          ctas={content.fairdata.ctas as Array<CtaType>}
+        <GeneralSection
+          // @ts-ignore
+          content={content.news.content}
+          // @ts-ignore
+          background={content.news.background}
+          // @ts-ignore
+          textColor={content.news.textColor}
         />
 
         <Dapp
@@ -71,13 +73,11 @@ const Home: NextPage = () => {
           features={content.dapp.features as Array<FeatureType>}
         />
 
-        <GeneralSection
-          // @ts-ignore
-          content={content.news.content}
-          // @ts-ignore
-          background={content.news.background}
-          // @ts-ignore
-          textColor={content.news.textColor}
+        <FairdDriveSection
+          tagline={content.fairdata.tagline}
+          title={content.fairdata.title}
+          content={content.fairdata.content}
+          ctas={content.fairdata.ctas as Array<CtaType>}
         />
 
         <Builders

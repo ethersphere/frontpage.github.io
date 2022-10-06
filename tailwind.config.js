@@ -26,9 +26,12 @@ module.exports = {
         gray: {
           100: "#F6F7F9",
           200: "#F0F1F2",
+          225: "#E5E9EC",
           250: "#CDD2D6",
           275: "#D6DBDF",
           300: "#D3D8DC",
+          350: "#B2B6B8",
+          400: "#565E65",
           500: "#3C3F42",
           700: "#212426",
           800: "#141516",
@@ -40,12 +43,19 @@ module.exports = {
           500: "#FF8A00",
         },
         green: {
+          200: "#D9EDDB",
+          400: "#117800",
           500: "#1BE601",
         },
+        yellow: {
+          200: "#FFE2C0",
+          400: "#EB7000"
+        }
       },
       typography: {
         DEFAULT: {
           css: {
+            "--tw-prose-bullets": "#000",
             color: "#000",
             a: {
               color: "#000",

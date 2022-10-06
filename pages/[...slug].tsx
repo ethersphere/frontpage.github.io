@@ -8,6 +8,7 @@ import {
   Footer,
   Navigation,
   Post,
+  Roadmap,
   Section,
 } from "@/components/index";
 import { getPageBySlug } from "lib/pages";
@@ -19,6 +20,7 @@ const Page: NextPage = (content: any) => {
     Section: Section,
     Cta: Cta,
     Post: Post,
+    Roadmap: Roadmap
   };
 
   return (
@@ -58,10 +60,12 @@ export async function getStaticPaths() {
     paths: [
       { params: { slug: ["build"] } },
       { params: { slug: ["build", "desktop"] } },
+      { params: { slug: ["build", "run-a-full-node"] } },
       { params: { slug: ["why"] } },
       { params: { slug: ["roadmap"] } },
       { params: { slug: ["milestone1"] } },
       { params: { slug: ["milestone2"] } },
+      { params: { slug: ["milestone3"] } },
       { params: { slug: ["milestone4"] } },
       { params: { slug: ["grants"] } },
       { params: { slug: ["foundation"] } },

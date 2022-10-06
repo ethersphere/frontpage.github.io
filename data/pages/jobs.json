@@ -6,14 +6,13 @@
     "title": "Join the team",
     "id": "join",
     "background": {
-      "src": "/assets/hero/join.png",
-      "alt": "",
-      "position": "container"
+      "src": "/assets/hero/join_alt.png",
+      "alt": ""
     },
     "content": "<p>The Swarm Foundation is made by an international team of visionaries, developers, scientists, sysadmins, operation managers, graphic designers and even international artists. Join the team to shape the future of Web3.</p>",
     "ctas": [
       {
-        "title": "Join the team",
+        "title": "About Swarm Foundation",
         "background": "orange",
         "href": "/foundation",
         "arrow": true

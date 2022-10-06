@@ -18,9 +18,7 @@ import { getJobBySlug, getJobsSlugs } from "lib/jobs";
 const JobSingle: NextPage = (content: any) => {
   return (
     <div className="bg-gray-100">
-      <Head>
-        <Meta title={content.meta.title ?? meta.title} />
-      </Head>
+      <Meta title={content.meta.title ?? meta.title} />
 
       <main>
         <Banner />
@@ -28,7 +26,11 @@ const JobSingle: NextPage = (content: any) => {
         <Navigation textColor="text-gray-700" />
 
         {/* @ts-ignore */}
-        <SecondaryHero index={0} title={content.job.title} />
+        <SecondaryHero
+          index={0}
+          title={content.job.title}
+          background={{ src: "/assets/hero/join_alt.png", alt: "" }}
+        />
 
         <div className="md:pt-20 lg:pt-40">
           <Post

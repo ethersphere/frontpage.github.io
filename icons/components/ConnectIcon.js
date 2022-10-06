@@ -6,25 +6,18 @@ function ConnectIcon({
   ...props
 }, svgRef) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
-    viewBox: "0 0 35 40",
-    fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 34.64 40",
     ref: svgRef,
     "aria-labelledby": titleId
   }, props), title ? /*#__PURE__*/React.createElement("title", {
     id: titleId
   }, title) : null, /*#__PURE__*/React.createElement("path", {
-    d: "M1 29.5 17.45 39l16.46-9.5V10.49L17.45 1 1 10.49M1.09 10.49v19",
-    stroke: "currentColor",
-    strokeWidth: 1.3,
-    strokeMiterlimit: 10,
-    strokeLinecap: "round"
+    d: "M0 10v20l17.32 10 17.32-10V10L17.32 0 0 10Zm33.03 19.07-15.72 9.07-15.7-9.07V10.93l15.71-9.08 15.72 9.07v18.15Z"
   }), /*#__PURE__*/React.createElement("path", {
-    d: "M6.74 13.81v12.36l10.71 6.2 10.7-6.2V13.81l-10.7-6.19-10.71 6.2ZM14.23 17.67v4.65M20.68 17.67v4.65",
-    stroke: "currentColor",
-    strokeWidth: 1.3,
-    strokeMiterlimit: 10,
-    strokeLinecap: "round"
+    d: "M6.25 13.61V26.4l11.07 6.39 11.07-6.39V13.61L17.32 7.22 6.25 13.61Zm20.54 11.86-9.47 5.47-9.47-5.47V14.53l9.47-5.47 9.47 5.47v10.93Z"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M14.09 17.4c-.44 0-.8.36-.8.8v3.59c0 .44.36.8.8.8s.8-.36.8-.8V18.2c0-.44-.36-.8-.8-.8ZM20.55 22.6c.44 0 .8-.36.8-.8v-3.59c0-.44-.36-.8-.8-.8s-.8.36-.8.8v3.59c0 .44.36.8.8.8Z"
   }));
 }
 

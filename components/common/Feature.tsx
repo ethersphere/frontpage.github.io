@@ -73,7 +73,7 @@ const Feature: React.FC<FeatureType> = ({
 
       {IconTag !== false && (
         <div className="flex items-end flex-grow px-2 sm:px-4">
-          <IconTag className={type === "default" ? "h-[38px]" : "h-[46px]"} />
+          <IconTag className={type === "default" ? "h-[40px]" : "h-[40px]"} />
         </div>
       )}
 

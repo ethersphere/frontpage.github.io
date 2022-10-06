@@ -6,25 +6,16 @@ function FaultIcon({
   ...props
 }, svgRef) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
-    viewBox: "0 0 35 40",
-    fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 34.64 40",
     ref: svgRef,
     "aria-labelledby": titleId
   }, props), title ? /*#__PURE__*/React.createElement("title", {
     id: titleId
   }, title) : null, /*#__PURE__*/React.createElement("path", {
-    d: "M1 10.5v19L17.45 39l16.46-9.5v-19L17.45 1 1 10.5ZM17.48 22.33V10.5",
-    stroke: "currentColor",
-    strokeWidth: 1.3,
-    strokeMiterlimit: 10,
-    strokeLinecap: "round"
+    d: "M34.64 30V10L17.32 0 0 10v20l17.32 10 17.32-10ZM1.61 10.93l15.71-9.08 15.72 9.07v18.15l-15.72 9.07-15.71-9.07V10.93Z"
   }), /*#__PURE__*/React.createElement("path", {
-    d: "M17.45 29.2a.94.94 0 1 0 0-1.89.94.94 0 0 0 0 1.89Z",
-    stroke: "currentColor",
-    strokeWidth: 1.3,
-    strokeMiterlimit: 10,
-    strokeLinecap: "round"
+    d: "M17.34 23.15c.44 0 .8-.36.8-.8V10.46c0-.44-.36-.8-.8-.8s-.8.36-.8.8v11.88c0 .44.36.8.8.8ZM19.07 28.29c0-.97-.79-1.75-1.75-1.75s-1.75.79-1.75 1.75.79 1.75 1.75 1.75 1.75-.79 1.75-1.75Z"
   }));
 }
 

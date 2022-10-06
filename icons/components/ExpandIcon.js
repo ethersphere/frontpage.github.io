@@ -6,25 +6,16 @@ function ExpandIcon({
   ...props
 }, svgRef) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
-    viewBox: "0 0 35 40",
-    fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 34.64 40",
     ref: svgRef,
     "aria-labelledby": titleId
   }, props), title ? /*#__PURE__*/React.createElement("title", {
     id: titleId
   }, title) : null, /*#__PURE__*/React.createElement("path", {
-    d: "M1 10.49v19L17.45 39l16.46-9.5V10.49L17.45 1 1 10.49ZM17.48 29.64V10.49",
-    stroke: "currentColor",
-    strokeWidth: 1.31,
-    strokeMiterlimit: 10,
-    strokeLinecap: "round"
+    d: "M34.64 30V10L17.32 0 0 10v20l17.32 10 17.32-10ZM1.61 10.93l15.71-9.08 15.72 9.07v18.15l-15.72 9.07-15.71-9.07V10.93Z"
   }), /*#__PURE__*/React.createElement("path", {
-    d: "m8.32 25.27 9.13 5.28 9.15-5.28M26.6 14.71l-9.15-5.28-9.13 5.28",
-    stroke: "currentColor",
-    strokeWidth: 1.31,
-    strokeMiterlimit: 10,
-    strokeLinecap: "round"
+    d: "M26.9 25.99a.8.8 0 0 0 .29-1.1.8.8 0 0 0-1.1-.29l-7.95 4.59V10.81l7.95 4.59a.8.8 0 0 0 1.1-.29c.22-.38.09-.87-.29-1.1l-9.58-5.53-9.58 5.53a.8.8 0 0 0-.29 1.1.8.8 0 0 0 1.1.29l7.99-4.62v18.44L8.55 24.6a.811.811 0 0 0-1.1.29c-.22.38-.09.87.29 1.1l9.58 5.53 9.58-5.53Z"
   }));
 }
 

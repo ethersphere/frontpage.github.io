@@ -50,7 +50,7 @@
   <span class="inline-block w-8 pr-4 text-right text-gray-400 select-none"
     >7</span
   >
-  <span class="font-bold">const</span>&nbsp;fileHash&nbsp;=&nbsp;await
+  <span class="font-bold">const</span>&nbsp;uploadResult&nbsp;=&nbsp;await
   bee.uploadData(batchId,
   <span class="text-orange-onDark">"Bee is awesome!"</span>)
 </div>
@@ -60,7 +60,7 @@
     >8</span
   >
   <span class="font-bold">const</span>&nbsp;data&nbsp;=&nbsp;await
-  bee.downloadData(fileHash)
+  bee.downloadData(uploadResult.reference)
 </div>
 
 <div class="whitespace-nowrap">

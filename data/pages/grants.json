@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Why"
+    "title": "Grants"
   },
   "sections": [
     {
@@ -88,6 +88,14 @@
                     "href": "https://github.com/GetLoginEth/",
                     "background": "transparent",
                     "arrow": true
+                  }
+                },
+                {
+                  "title": "Metaprovide - Nextcloud Swarm Plugin ",
+                  "content": "<p>Metaprovide has implemented a Nextcloud plugin that enables users to interact with Swarm storage directly in Nextcloud Files bringing Nextcloud users closer to the vision of a decentralized future.</p>",
+                  "cta": {
+                    "href": "https://metaprovide.org/nextcloud-swarm-plugin",
+                    "title": "More"
                   }
                 },
                 {

@@ -121,6 +121,19 @@
     ],
     "tabs": [
       {
+        "title": "Bee",
+        "content": "Bee is a peer-to-peer client that connects you with other peers all over the world to become part of Swarm network, a global distributed p2p storage network that aims to store and distribute all of the world's data.",
+        "ctas": [
+          {
+            "title": "Documentation",
+            "href": "https://docs.ethswarm.org/docs/dapps-on-swarm/introduction",
+            "arrow": true,
+            "background": "transparent"
+          }
+        ],
+        "code": "<div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 mr-4 text-right text-gray-500 select-none\" >1</span > <span class=\"text-gray-100\">Welcome to Swarm.... Bzzz Bzzzz Bzzzz</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 mr-4 text-right text-gray-500 select-none\" >2</span > <span class=\"text-gray-100\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 mr-4 text-right text-gray-500 select-none\" >3</span > <span class=\"text-gray-100\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\&nbsp;&nbsp;&nbsp;&nbsp;o&nbsp;^&nbsp;o&nbsp;&nbsp;&nbsp;&nbsp;/</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 mr-4 text-right text-gray-500 select-none\" >4</span > <span class=\"text-gray-100\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\&nbsp;(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)&nbsp;/</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 mr-4 text-right text-gray-500 select-none\" >5</span > <span class=\"text-gray-100\">&nbsp;&nbsp;&nbsp;____________(%%%%%%%)____________</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 mr-4 text-right text-gray-500 select-none\" >6</span > <span class=\"text-gray-100\">&nbsp;&nbsp;(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;)%%%%%%%(&nbsp;&nbsp;\\&nbsp;&nbsp;&nbsp;\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 mr-4 text-right text-gray-500 select-none\" >7</span > <span class=\"text-gray-100\">&nbsp;&nbsp;(___/___/__/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\__\\___\\___)</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 mr-4 text-right text-gray-500 select-none\" >8</span > <span class=\"text-gray-100\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;/(%%%%%%%)\\&nbsp;&nbsp;\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 mr-4 text-right text-gray-500 select-none\" >9</span > <span class=\"text-gray-100\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(__/___/&nbsp;(%%%%%%%)&nbsp;\\___\\__)</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 mr-4 text-right text-gray-500 select-none\" >10</span > <span class=\"text-gray-100\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)\\</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 mr-4 text-right text-gray-500 select-none\" >11</span > <span class=\"text-gray-100\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;(%%%%%)&nbsp;&nbsp;&nbsp;\\</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 mr-4 text-right text-gray-500 select-none\" >12</span > <span class=\"text-gray-100\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(%%%)</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 mr-4 text-right text-gray-500 select-none\" >13</span > <span class=\"text-gray-100\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!</span></div>"
+      },
+      {
         "title": "Bee.js",
         "content": "Bee-js is Bee’s complementary JavaScript library. It’s the technology underpinning the swarm-cli and bee- dashboard tools and is a powerful tool for building completely decentralised apps with just a few lines of code.",
         "ctas": [
@@ -132,7 +145,7 @@
             "title": "Documentation"
           }
         ],
-        "code": "<div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">1</span> <span class=\"font-bold\">import</span>&nbsp;{&nbsp;Bee&nbsp;}&nbsp;from&nbsp; <span class=\"text-orange-onDark\">\"@ethersphere/bee-js\"</span></div><div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">2</span></div><div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">3</span> <span class=\"font-bold\">const</span>&nbsp;bee&nbsp;=&nbsp;<span class=\"font-bold\">new</span>&nbsp;Bee(<span class=\"text-orange-onDark\">\"http://localhost:1633\"</span>)</div><div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">4</span></div><div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">5</span> <span class=\"text-gray-275 italic mr-4\">// Be aware, this creates on-chain transactions that spend Eth and BZZ!</span></div><div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">6</span> <span class=\"font-bold\">const</span>&nbsp;batchId&nbsp;=&nbsp;await bee.createPostageBatch(<span class=\"text-orange-onDark\">‘100’</span>, 17)</div><div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">7</span> <span class=\"font-bold\">const</span>&nbsp;fileHash&nbsp;=&nbsp;await bee.uploadData(batchId, <span class=\"text-orange-onDark\">\"Bee is awesome!\"</span>)</div><div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">8</span> <span class=\"font-bold\">const</span>&nbsp;data&nbsp;=&nbsp;await bee.downloadData(fileHash)</div><div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">9</span></div><div class=\"whitespace-nowrap\"> <span class=\"text-gray-500 w-4 inline-block text-right mr-4 select-none\">10</span> <span>console.log(data.text())</span>&nbsp;<span class=\"text-gray-275 italic\">// prints ‘Bee is awesome!’</span></div>"
+        "code": "<div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 pr-4 text-right text-gray-400 select-none\" >1</span > <span class=\"font-bold\">import</span>&nbsp;{&nbsp;Bee&nbsp;}&nbsp;from&nbsp; <span class=\"text-orange-onDark\">\"@ethersphere/bee-js\"</span></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 pr-4 text-right text-gray-400 select-none\" >2</span ></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 pr-4 text-right text-gray-400 select-none\" >3</span > <span class=\"font-bold\">const</span>&nbsp;bee&nbsp;=&nbsp;<span class=\"font-bold\" >new</span >&nbsp;Bee(<span class=\"text-orange-onDark\">\"http://localhost:1633\"</span>)</div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 pr-4 text-right text-gray-400 select-none\" >4</span ></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 pr-4 text-right text-gray-400 select-none\" >5</span > <span class=\"pr-4 italic text-gray-400\" >// Be aware, this creates on-chain transactions that spend Eth and BZZ!</span ></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 pr-4 text-right text-gray-400 select-none\" >6</span > <span class=\"font-bold\">const</span>&nbsp;batchId&nbsp;=&nbsp;await bee.createPostageBatch(<span class=\"text-orange-onDark\">‘100’</span>, 17)</div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 pr-4 text-right text-gray-400 select-none\" >7</span > <span class=\"font-bold\">const</span>&nbsp;uploadResult&nbsp;=&nbsp;await bee.uploadData(batchId, <span class=\"text-orange-onDark\">\"Bee is awesome!\"</span>)</div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 pr-4 text-right text-gray-400 select-none\" >8</span > <span class=\"font-bold\">const</span>&nbsp;data&nbsp;=&nbsp;await bee.downloadData(uploadResult.reference)</div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 pr-4 text-right text-gray-400 select-none\" >9</span ></div><div class=\"whitespace-nowrap\"> <span class=\"inline-block w-8 pr-4 text-right text-gray-400 select-none\" >10</span > <span>console.log(data.text())</span>&nbsp;<span class=\"italic text-gray-400\" >// prints ‘Bee is awesome!’</span ></div>"
       },
       {
         "title": "Swarm-CLI",
@@ -214,7 +227,7 @@
     "ctas": []
   },
   "news": {
-    "background": "bg-black",
+    "background": "bg-gray-800",
     "textColor": "text-gray-100",
     "content": {
       "tagline": "What is happening",
@@ -316,10 +329,10 @@
         }
       },
       {
-        "title": "Social Archive",
-        "content": "<p>SocialArchive will allow users to store their own data, giving them sovereignty to keep it from and/or integrate it with other services if they wish to do so.</p>",
+        "title": "Metaprovide",
+        "content": "<p>Metaprovide has implemented a Nextcloud plugin that enables users to interact with Swarm storage directly in Nextcloud Files bringing Nextcloud users closer to the vision of a decentralized future.</p>",
         "cta": {
-          "href": "https://github.com/codiak/socialarchive-dapp",
+          "href": "https://metaprovide.org/nextcloud-swarm-plugin",
           "title": "More"
         }
       }

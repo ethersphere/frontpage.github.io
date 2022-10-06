@@ -27,7 +27,8 @@ const Button: React.FC<ButtonProps> = ({
     "bg-orange-500 focus:outline-none hover:bg-orange-hover px-4";
 
   if (background === "transparent") {
-    classNameBackground = "bg-orange-transparent focus:outline-none";
+    classNameBackground =
+      "bg-orange-transparent focus:outline-none hover:text-gray-500";
   } else if (background === "white") {
     classNameBackground = "bg-white focus:ring-white px-4";
   } else if (background === "black") {
@@ -44,7 +45,7 @@ const Button: React.FC<ButtonProps> = ({
   }
 
   const classNameButton = cx(
-    "transition duration-200 uppercase inline-flex justify-center items-center text-lg font-semibold tracking-wider py-2 font-display gap-3 group focus:outline-none",
+    "transition duration-200 uppercase inline-flex justify-center items-center text-lg font-semibold tracking-wider py-2.5 font-display gap-3 group focus:outline-none",
     classNameBackground,
     classNameColor,
     className

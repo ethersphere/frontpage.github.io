@@ -9,12 +9,16 @@
           "title": "Build"
         },
         {
-          "href": "/build#run",
-          "title": "Run a node"
+          "href": "/build/run-a-full-node",
+          "title": "Run a full node"
         },
         {
           "href": "/build/desktop",
           "title": "Swarm desktop"
+        },
+        {
+          "title": "Swarm Gateway",
+          "href": "https://gateway.ethswarm.org/"
         },
         {
           "href": "https://github.com/ethersphere/awesome-swarm",

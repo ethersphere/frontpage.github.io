@@ -33,7 +33,7 @@ const Jobs: NextPage = ({ jobs }: any) => {
                     title: job.job.title,
                     content: job.job.description,
                     cta: {
-                      title: "Apply",
+                      title: "More",
                       href: `/jobs/${job.job.slug}`,
                       arrow: true,
                       background: "transparent",

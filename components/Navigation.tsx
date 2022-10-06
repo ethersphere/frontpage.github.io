@@ -61,6 +61,7 @@ const Navigation: React.FC<NavigationProps> = ({
                   <MenuLink
                     key={index}
                     {...link}
+                    textColor={textColor}
                     selected={router.asPath.startsWith(link.href)}
                   />
                 ))}
@@ -69,6 +70,7 @@ const Navigation: React.FC<NavigationProps> = ({
           <div className="hidden text-lg antialiased font-bold leading-10 tracking-wider uppercase font-display lg:flex">
             {navigation.items.length > 1 && (
               <MenuLink
+                textColor={textColor}
                 {...navigation.items[navigation.items.length - 1]}
                 selected={router.asPath.startsWith(
                   navigation.items[navigation.items.length - 1].href
@@ -88,10 +90,16 @@ const Navigation: React.FC<NavigationProps> = ({
               <RegularLink
                 key={index}
                 href={child.href}
-                className="inline-flex items-center px-4 py-1 text-lg antialiased font-bold leading-10 tracking-wider uppercase duration-150 font-display group hover:text-gray-400"
+                className={cx(
+                  "inline-flex items-center px-4 py-1 text-lg antialiased font-bold leading-10 tracking-wider uppercase duration-150 font-display group hover:text-gray-400",
+                  child.href === router.asPath ? "text-gray-400" : ""
+                )}
               >
                 <span>{child.title}</span>
-                <ArrowIcon className="w-4 h-4 ml-2" />
+                <div className="relative w-4 h-4 ml-2">
+                  <ArrowIcon className="absolute inset-0 w-4 h-4 duration-200 group-hover:translate-x-4 group-hover:opacity-0 group-hover:text-gray-400" />
+                  <ArrowIcon className="absolute inset-0 w-4 h-4 duration-200 -translate-x-4 opacity-0 group-hover:text-gray-400 group-hover:translate-x-0 group-hover:opacity-100" />
+                </div>
               </RegularLink>
             ))}
           </div>
@@ -166,11 +174,13 @@ export default Navigation;
 type MenuLinkProps = {
   href?: string;
   title: string;
+  textColor?: "text-white" | "text-gray-700";
   selected?: boolean;
 };
 const MenuLink: React.FC<MenuLinkProps> = ({
   href = "/",
   title,
+  textColor,
   selected = false,
 }) => {
   return (
@@ -178,7 +188,8 @@ const MenuLink: React.FC<MenuLinkProps> = ({
       href={href}
       className={cx(
         "px-4 py-1 text-lg antialiased font-bold leading-10 tracking-wider uppercase duration-150 font-display hover:bg-black hover:text-gray-100",
-        selected ? "bg-black text-gray-100" : ""
+        selected ? "bg-black text-gray-100" : "",
+        textColor === "text-white" ? "bg-gray-800" : ""
       )}
     >
       {title}

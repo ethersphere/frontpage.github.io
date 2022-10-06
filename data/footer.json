@@ -40,6 +40,10 @@
         {
           "title": "Swarm Gateway",
           "href": "https://gateway.ethswarm.org/"
+        },
+        {
+          "title": "Get BZZ",
+          "href": "https://bzz.exchange/"
         }
       ]
     },

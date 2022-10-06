@@ -1,15 +1,16 @@
 {
   "meta": {
-    "title": "Milestone 2.0"
+    "title": "Milestone 2"
   },
   "sections": [
     {
       "type": "Section",
       "data": {
         "hero": {
-          "title": "2.0",
+          "title": "Milestone 2",
           "id": "",
-          "content": "<p>Milestone</p>"
+          "background": { "src": "/assets/hero/roadmap2.png", "alt": "" },
+          "content": "<p>Setting up and interacting with a Bee node is optimised for ease-of-use</p>"
         }
       }
     },
@@ -21,7 +22,7 @@
           "ctas": [
             {
               "title": "All milestones",
-              "href": "/roadmap#milestones",
+              "href": "/roadmap",
               "arrow": true,
               "back": true,
               "background": "transparent"

@@ -9,28 +9,73 @@
         "hero": {
           "title": "Roadmap",
           "id": "roadmap",
-          "background": { "src": "/assets/hero/roadmap.png", "alt": "" },
-          "content": "<p>What’s next for Swarm?</p>"
+          "background": { "src": "/assets/hero/roadmap2.png", "alt": "" },
+          "content": "<p>The Swarm Foundation is proud to share its core tech team's internal agenda for the next 12 months. The aim is to create predictability in development tracks and the wider organisation, as well as help coordinate between the Foundation's efforts and the efforts deployed to the broader Swarm community.</p>"
         }
       }
     },
     {
-      "type": "Post",
+      "type": "Roadmap",
       "data": {
         "border": true,
         "id": "milestone",
         "sidebar": {
-          "content": "<p>Currently, the Swarm Foundation team is working on <strong>Milestone3</strong>.</p>",
-          "ctas": [
-            {
-              "title": "All milestones",
-              "href": "#milestones",
-              "arrow": true,
-              "background": "orange"
-            }
-          ]
+          "content": "<p>Currently, the Swarm Foundation team is working on <strong>Milestone3</strong>.</p>"
         },
-        "content": "<h2>Phase 1 - Postage stamp upgrade and incentives calibration (September 12th release)</h2><ul><li>Full reserve total size is correctly calculated and clients are able to consent on storage depth within neighbourhoods. This involves the update of the Postage Stamp smart contract so that we can release the value currently locked in the contract, paving the way for the rollout of the storage incentives roadmap.</li></ul><h2>Phase 2 - Smart Contracts to deploy (Staking & Schelling/Redistribution) (phases 2&3 October release to testnet)</h2><ul><li>The new storage incentives implement a Schelling game based on reserve commitment. The storage incentives contract pays out the pot to a random neighbourhood choosing the winner node based on neighbourhood stake density. No slashing and no verification of claim.</li><li>After staking and committing, applicants reveal their reserve commitments and the truth is selected in proportion to stake density. Winner is selected in proportion to stake and paid the pot.</li></ul><h2>Phase 3 - The Price Oracle smart contract (phases 2&3 October release to testnet)</h2><ul><li>The price oracle contract reacts to signals of changing supply and demand by setting the global price of storage (unit is chunk per block) accordingly.</li></ul><h2>Phase 4 - Reserve Commitment Verification I (December development, release TBD)</h2><ul><li>The winning claim is verified for retention, relevance, reserve utilisation rate, verified correctness of reserve commitment, requiring segment inclusion proof of a deterministically random chunk in RC for valid claim (proof of retention), requires postage stamp (proof of relevance), verify PO(stamp, anchor) > reported depth, reserve size estimation is based on inclusion proofed sample density (proof of reserve size).</li><li>Calculated the reserve commitment (RC) hash (iteration over reserved chunks within storage depth and calculate a sample of n (128) chunks whose transformed data hash to the smallest integers).</li><li>Slashing introduced - to prevent non-conformant proofs of reserve by slashing stake</li></ul><h2>Phase 5 - Reserve Commitment Verification II (January development, release TBD)</h2><ul><li>A secondary reserve commitment (RC2) is included in the winning claim and verified in the contract. RC2 is a similar 128-chunk sample of batch indexes to prevent content mining attack using valid stamps from self-owned batches</li></ul>"
+        "items": [
+          {
+            "status": "completed",
+            "title": "1. Host unstoppable content on Swarm",
+            "content": "<p>Uploading and downloading content such as websites or nft- data is optimised and predictable. This functionality can be accessed through all Swarm products.</p>",
+            "ctas": [
+              {
+                "title": "Release info",
+                "background": "transparent",
+                "href": "/milestone1",
+                "arrow": true
+              }
+            ]
+          },
+          {
+            "status": "completed",
+            "title": "2. Setting up and interacting with a Bee node is optimised for ease-of-use",
+            "content": "<p>Any crypto enthusiast with an interest in Swarm can set up and run a Bee node easily.</p>",
+            "ctas": [
+              {
+                "title": "Release info",
+                "background": "transparent",
+                "href": "/milestone2",
+                "arrow": true
+              }
+            ]
+          },
+          {
+            "status": "in-progress",
+            "title": "3. Node-operators are directly rewarded for contributing their storage space",
+            "content": "<p>Uploading and downloading content such as websites or nft- data is optimised and predictable. This functionality can be accessed through all Swarm products.</p>",
+            "ctas": [
+              {
+                "title": "Release info",
+                "background": "transparent",
+                "href": "/milestone3",
+                "arrow": true
+              }
+            ]
+          },
+          {
+            "status": "next-up",
+            "title": "4. Optimisation for larger data uploads",
+            "content": "<p>Uploading and downloading bigger files and datasets is optimised.</p>",
+            "ctas": [
+              {
+                "title": "Release info",
+                "background": "transparent",
+                "href": "/milestone4",
+                "arrow": true
+              }
+            ]
+          }
+        ]
       }
     },
     {
@@ -39,16 +84,11 @@
         "items": [
           {
             "contentWidth": "full",
-            "title": "Foundation core tech roadmap",
-            "content": "<p>The Swarm Foundation is proud to share its tech team's internal agenda for the next 12 months. The aim is to create predictability in development tracks and the wider organisation, as well as help coordinate between the Foundation's efforts and the efforts deployed to the broader Swarm community.</p><p>Through this shared and transparent understanding, we aim to further the Foundation's purpose to support the Swarm network to thrive and provide the infrastructure necessary for a decentralised web.</p>"
-          },
-          {
-            "contentWidth": "full",
             "title": "Vision",
-            "content": "<p>Let's start with a recap of the ideal experience of various participants in the network before diving into the concrete milestones:</p>",
+            "content": "<p>A recap of the ideal experience of various participants in the network:</p>",
             "features": {
-              "columns": "two",
-              "type": "large",
+              "columns": "three",
+              "type": "default",
               "features": [
                 {
                   "title": "End Users",
@@ -73,67 +113,6 @@
                 {
                   "title": "Commons",
                   "content": "<p>The Foundation subsidises efforts to make large datasets of public interest available through Swarm.</p>"
-                }
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "type": "Section",
-      "data": {
-        "hero": {
-          "title": "Milestones",
-          "background": { "src": "/assets/hero/roadmap.png", "alt": "" },
-          "id": "milestones"
-        },
-        "items": [
-          {
-            "contentWidth": "full",
-            "features": {
-              "columns": "two",
-              "type": "large",
-              "features": [
-                {
-                  "title": "1.0 Host unstoppable content on Swarm",
-                  "content": "<p>Status: <strong>DONE</strong></p><p>Uploading and downloading content such as websites or nft-data is optimised and predictable. This functionality can be accessed through all Swarm products.</p>",
-                  "cta": {
-                    "title": "More",
-                    "href": "/milestone1",
-                    "background": "transparent",
-                    "arrow": true
-                  }
-                },
-                {
-                  "title": "2.0 Setting up and interacting with a Bee node is optimised for ease-of-use",
-                  "content": "<p>Status: <strong>DONE</strong></p><p>Any crypto enthusiast with an interest in Swarm can set up and run a Bee node easily.</p>",
-                  "cta": {
-                    "title": "More",
-                    "href": "/milestone2",
-                    "background": "transparent",
-                    "arrow": true
-                  }
-                },
-                {
-                  "title": "3.0 Node-operators are directly rewarded for contributing their storage space",
-                  "content": "<p>Status: <span class=\"text-orange-onDark font-bold uppercase\">in progress</span></p><p>Uploading and downloading content such as websites or nft- data is optimised and predictable. This functionality can be accessed through all Swarm products.</p>",
-                  "cta": {
-                    "title": "More",
-                    "href": "#milestone",
-                    "background": "transparent",
-                    "arrow": true
-                  }
-                },
-                {
-                  "title": "4.0 Optimisation for larger data uploads",
-                  "content": "<p>Status: <span class=\"font-bold uppercase\">/</span></p><p>Uploading and downloading bigger files and datasets is optimised.</p>",
-                  "cta": {
-                    "title": "More",
-                    "href": "/milestone4",
-                    "background": "transparent",
-                    "arrow": true
-                  }
                 }
               ]
             }
