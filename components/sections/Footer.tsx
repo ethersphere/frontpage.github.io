@@ -3,6 +3,7 @@ import { Newsletter } from "@/components/index";
 import content from "../../data/footer.json";
 import { RegularLink } from "../common";
 import Link from "next/link";
+import Logo from "../Logo";
 
 type FooterProps = {};
 
@@ -12,12 +13,7 @@ const Footer: React.FC<FooterProps> = () => {
       <div className="flex flex-wrap justify-center w-full max-w-6xl pt-0 sm:pt-12 2xl:max-w-7xl">
         <div className="grid w-full grid-cols-2 gap-8 px-6 py-20 md:grid-cols-4 lg:grid-cols-6 lg:py-32 xl:px-4">
           <div className="lg:col-span-3">
-            <img
-              loading="lazy"
-              className="h-[26px]"
-              src="/assets/swarm_logo.png"
-              alt="Swarm Logo"
-            />
+            <Logo className="h-[26px] fill-current text-white" />
             <ul className="mt-4 space-y-3 text-sm sm:mt-8 md:text-base lg:space-y-4 lg:text-lg font-display">
               {content.primary.map((item, index) => (
                 <li key={index}>

@@ -26,11 +26,11 @@ const Post: React.FC<PostProps> = ({
     >
       <Container
         className={cx(
-          "grid w-full grid-cols-1 md:grid-cols-3 gap-16 md:gap-24 pb-16 md:pb-32",
+          "grid w-full grid-cols-1 gap-16 pb-16 sm:-ml-4 md:grid-cols-3 md:pb-32 md:gap-0",
           border ? "border-b border-black mb-16 md:mb-32" : ""
         )}
       >
-        <div className="space-y-4 md:space-y-12">
+        <div className="max-w-xs space-y-4 sm:px-2 md:px-4 md:space-y-12">
           <SectionContent fullWidth={true} content={sidebar?.content} />
           <ButtonGroup ctas={sidebar?.ctas} />
         </div>

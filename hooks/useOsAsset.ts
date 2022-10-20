@@ -46,7 +46,7 @@ const findAsset = (assets: Asset[] | undefined) => {
         break;
 
       case "MacOS":
-        if (asset.name.includes("arm64.dmg")) {
+        if (asset.name.includes("x64.dmg")) {
           return { osName, asset };
         }
         break;
